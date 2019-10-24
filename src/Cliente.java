@@ -55,6 +55,16 @@ public class Cliente {
 	private static BufferedReader reader;
 	private static PublicKey llavePublicaServidor;
 	
+	public static void extraerPKCD(String fromServer) throws CertificateException{
+		//Se parsea el formato hexadecimal del certificado del servidor a un formato de certificado X509
+		byte[] certificadoBytes = DatatypeConverter.parseBase64Binary(fromServer);
+		CertificateFactory creador = CertificateFactory.getInstance("X.509");
+		InputStream in =  new ByteArrayInputStream(certificadoBytes);
+		X509Certificate certificadoServidor = (X509Certificate)creador.generateCertificate(in);
+		
+		//Se obtiene la llave publica del servidor a partir del certificado
+		llavePublicaServidor = certificadoServidor.getPublicKey();
+	}
 	
 	public static byte[] cifrarA (Key llave, String algoritmo, String texto){
 		byte[] textoCifrado;
@@ -87,26 +97,30 @@ public class Cliente {
 		return textoClaro;
 	}
 	
-	public static void extraerPKCD(String fromServer) throws CertificateException{
-		//Se parsea el formato hexadecimal del certificado del servidor a un formato de certificado X509
-		byte[] certificadoBytes = DatatypeConverter.parseBase64Binary(fromServer);
-		CertificateFactory creador = CertificateFactory.getInstance("X.509");
-		InputStream in =  new ByteArrayInputStream(certificadoBytes);
-		X509Certificate certificadoServidor = (X509Certificate)creador.generateCertificate(in);
-		
-		//Se obtiene la llave publica del servidor a partir del certificado
-		llavePublicaServidor = certificadoServidor.getPublicKey();
-	}
 	
-	public static byte[] verficarLongCadena(String cadena){ 
-		
-			if(cadena.length()%4!=0){
-				cadena="0"+cadena;
-				verficarLongCadena(cadena);
-			}
-				return DatatypeConverter.parseBase64Binary(cadena);
-	}
 	
+   public static byte[] verficarLongCadena(String cadena){ 
+		String res = cadena;
+		while(res.length()%4!=0){
+			res="0"+res;
+			System.out.println(res);
+			
+		}
+		System.out.println("length: "+res.length());
+	return DatatypeConverter.parseBase64Binary(res);
+}
+	
+	
+   public static byte[] verficarLongCadena16(String cadena){ 
+		String res = cadena;
+		while(res.length()%16!=0){
+			res="0"+res;
+			System.out.println(res);
+			
+		}
+		System.out.println("length: "+res.length());
+	return DatatypeConverter.parseBase64Binary(res);
+}
 	public static void main(String[] args) {
 		try {
 			cs = new Socket(HOST, PORT);
@@ -122,11 +136,12 @@ public class Cliente {
 			String cd = reader.readLine();
 			System.out.println(cd);
 			extraerPKCD(cd);
-			KeyGenerator keygen= KeyGenerator.getInstance(ALG.AES.getS());
-			keygen.init(128);
+			KeyGenerator keygen= KeyGenerator.getInstance("AES");		
 			SecretKey ks= keygen.generateKey();	
-			
-			byte[] ksCifrada = cifrarA(llavePublicaServidor, ALG.RSA.getS(), DatatypeConverter.printBase64Binary(ks.getEncoded()));
+	
+			System.out.println("Baina: "+DatatypeConverter.printBase64Binary(ks.getEncoded()));
+			String a = new String(ks.getEncoded());
+			byte[] ksCifrada = cifrarA(llavePublicaServidor, ALG.RSA.getS(), a);
 			String ksCifradaS= DatatypeConverter.printBase64Binary(ksCifrada);
 			
 			System.out.println("llave de sesion: "+ DatatypeConverter.printBase64Binary(ks.getEncoded()));
@@ -136,8 +151,11 @@ public class Cliente {
 			System.out.println("se envió: reto");
 			
 			cd = reader.readLine();
-			byte[] retoDesc = descifrarS(ks,verficarLongCadena(cd) ); 
-			System.out.println("reto descifrado: "+DatatypeConverter.printBase64Binary(retoDesc));
+			System.out.println("length cd: "+cd.length());
+			System.out.println("Reto cifrado: "+cd);
+			byte[] retoDesc = descifrarS(ks,verficarLongCadena(cd)); 
+			String a1=DatatypeConverter.printBase64Binary(retoDesc);
+			System.out.println("reto descifrado: "+a1);
 			
 //			System.out.println("se recibe cod encriptado: "+cd);
 //			
