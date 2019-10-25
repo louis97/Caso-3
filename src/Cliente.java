@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,19 +11,16 @@ import java.security.PublicKey;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
-import java.util.Base64;
+import java.util.Scanner;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.xml.bind.DatatypeConverter;
 
-import org.bouncycastle.crypto.digests.SHA1Digest;
 import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.bouncycastle.crypto.tls.SSL3Mac;
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class Cliente {
 
@@ -48,7 +44,6 @@ public class Cliente {
 		}
 	}
 
-	private static String mensajeServidor;
 	// private static ServerSocket ss;
 	private static Socket cs;
 	private static PrintWriter writer;
@@ -59,6 +54,7 @@ public class Cliente {
 		// Se parsea el formato hexadecimal del certificado del servidor a un
 		// formato de certificado X509
 		byte[] certificadoBytes = DatatypeConverter.parseBase64Binary(fromServer);
+		
 		CertificateFactory creador = CertificateFactory.getInstance("X.509");
 		InputStream in = new ByteArrayInputStream(certificadoBytes);
 		X509Certificate certificadoServidor = (X509Certificate) creador.generateCertificate(in);
@@ -141,7 +137,6 @@ public class Cliente {
 			System.out.println(res);
 
 		}
-		System.out.println("length: " + res.length());
 		return DatatypeConverter.parseBase64Binary(res);
 	}
 
@@ -154,6 +149,7 @@ public class Cliente {
 	}
 
 	public static void main(String[] args) {
+		
 		try {
 			boolean ok = true;
 			cs = new Socket(HOST, PORT);
@@ -167,22 +163,20 @@ public class Cliente {
 			System.out.println(reader.readLine());
 
 			String cd = reader.readLine();
-			System.out.println(cd);
+			System.out.println("Certificado del servidor: "+cd);
 			extraerPKCD(cd);
 			KeyGenerator keygen = KeyGenerator.getInstance("AES");
 			SecretKey ks = keygen.generateKey();
 
-			System.out.println("Baina: " + DatatypeConverter.printBase64Binary(ks.getEncoded()));
+			System.out.println("Llave simetrica de sesion: " + DatatypeConverter.printBase64Binary(ks.getEncoded()));
 			String a = new String(ks.getEncoded());
 			byte[] ksCifrada = cifrarA(llavePublicaServidor, ALG.RSA.getS(), a);
 			String ksCifradaS = DatatypeConverter.printBase64Binary(ksCifrada);
-
-			System.out.println("llave de sesion: " + DatatypeConverter.printBase64Binary(ks.getEncoded()));
 			writer.println(ksCifradaS);
 
 			String reto = "reto";
 			writer.println(reto);
-			System.out.println("se envió: reto");
+			System.out.println("se envió: " + reto);
 
 			cd = reader.readLine();
 			System.out.println("Reto cifrado: " + cd);
@@ -201,18 +195,22 @@ public class Cliente {
 				ok = false;
 			}
 			if (ok) {
-				String cc = "cc";
+				Scanner sc = new Scanner(System.in);
+				System.out.println("Ingrese su cedula: ");
+				String cc = sc.nextLine();
 				byte[] ccCifrado = cifrarS(ks, "", cc);
 				String ccCifradoS = DatatypeConverter.printBase64Binary(ccCifrado);
 				writer.println(ccCifradoS);
 
-				String clave = "clave";
+				System.out.println("Ingrese su clave: ");
+				String clave = sc.nextLine();
 				byte[] claveCifrado = cifrarS(ks, "", clave);
 				String claveCifradoS = DatatypeConverter.printBase64Binary(claveCifrado);
 				writer.println(claveCifradoS);
 
 				String cifradoValor = reader.readLine();
 				byte[] descifradoValor = descifrarS(ks, verficarLongCadena(cifradoValor));
+				System.out.println("Valor del ahorro de la cuenta: " + DatatypeConverter.printBase64Binary(descifradoValor));
 
 				String hmacC = reader.readLine();
 				byte[] hmacB = descifrarA(llavePublicaServidor, ALG.RSA.getS(), verficarLongCadena(hmacC));
