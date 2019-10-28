@@ -134,7 +134,6 @@ public class Cliente {
 		String res = cadena;
 		while (res.length() % 4 != 0) {
 			res = "0" + res;
-			System.out.println(res);
 
 		}
 		return DatatypeConverter.parseBase64Binary(res);
