@@ -31,8 +31,8 @@ public class D implements Runnable{
 	public static final String INICIO = "INICIO";
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
-	public static final int numCadenas = 9;
-
+	public static final int numCadenas = 8;
+	public static int transaccionesPerdidas=0;
 	// Atributos
 	private Socket sc = null;
 	private String dlg;
@@ -214,6 +214,7 @@ public class D implements Runnable{
 				} else {
 					cadenas[7] = dlg + "Terminando con error" + linea;
 			        System.out.println(cadenas[7]);
+			        transaccionesPerdidas++;
 				}
 			     
 		        sc.close();
@@ -222,10 +223,12 @@ public class D implements Runnable{
 		        synchronized (recibo) {
 		        	for (int i=0;i<numCadenas;i++) {
 					    escribirMensaje(cadenas[i]); 
+					   
 				    }
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
-				    escribirMensaje(getSystemCpuLoad()+"");
+				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
 				}
+		        
 	        } catch (Exception e) {
 	          e.printStackTrace();
 	        }
