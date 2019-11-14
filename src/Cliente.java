@@ -24,7 +24,7 @@ import org.bouncycastle.crypto.params.KeyParameter;
 
 public class Cliente {
 
-	private final static int PORT = 1245;
+	private final static int PORT = 54321;
 	private final static String HOST = "localhost";
 
 	private final static String ALGORITMOS = "ALGORITMOS";
