@@ -44,9 +44,9 @@ public class D implements Runnable{
 	public static final String INICIO = "INICIO";
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
-	public static ArrayList<Long> tiempos;
-	public static ArrayList<Double> usosCPU;
-	public static ArrayList<Boolean> fallos;
+	public static ArrayList<Long> tiempos = new ArrayList<Long>();
+	public static ArrayList<Double> usosCPU= new ArrayList<Double>();
+	public static ArrayList<Boolean> fallos= new ArrayList<Boolean>();
 	public static final int numCadenas = 8;
 	public static double transaccionesPerdidas=0;
 	// Atributos
