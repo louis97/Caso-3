@@ -32,7 +32,7 @@ public class D implements Runnable{
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
 	public static final int numCadenas = 8;
-	public static int transaccionesPerdidas=0;
+	public static double transaccionesPerdidas=0;
 	// Atributos
 	private Socket sc = null;
 	private String dlg;
@@ -55,6 +55,7 @@ public class D implements Runnable{
 		mybyte = certSer.getEncoded();
 		} catch (Exception e) {
 			System.out.println("Error creando encoded del certificado para el thread" + dlg);
+			transaccionesPerdidas++;
 			e.printStackTrace();
 		}
 	}
@@ -102,6 +103,7 @@ public class D implements Runnable{
 				cadenas[0] = "Fase1: ";
 				if (!linea.equals(HOLA)) {
 					ac.println(ERROR);
+					transaccionesPerdidas++;
 				    sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				} else {
@@ -115,6 +117,7 @@ public class D implements Runnable{
 				cadenas[1] = "Fase2: ";
 				if (!(linea.contains(SEPARADOR) && linea.split(SEPARADOR)[0].equals(ALGORITMOS))) {
 					ac.println(ERROR);
+					transaccionesPerdidas++;
 					sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				}
@@ -123,16 +126,19 @@ public class D implements Runnable{
 				if (!algoritmos[1].equals(S.DES) && !algoritmos[1].equals(S.AES) &&
 					!algoritmos[1].equals(S.BLOWFISH) && !algoritmos[1].equals(S.RC4)){
 					ac.println(ERROR);
+					transaccionesPerdidas++;
 					sc.close();
 					throw new Exception(dlg + ERROR + "Alg.Simetrico" + REC + algoritmos + "-terminando.");
 				}
 				if (!algoritmos[2].equals(S.RSA) ) {
 					ac.println(ERROR);
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "Alg.Asimetrico." + REC + algoritmos + "-terminando.");
 				}
 				if (!validoAlgHMAC(algoritmos[3])) {
 					ac.println(ERROR);
+					transaccionesPerdidas++;
 					sc.close();
 					throw new Exception(dlg + ERROR + "AlgHash." + REC + algoritmos + "-terminando.");
 				}
@@ -172,6 +178,7 @@ public class D implements Runnable{
 					System.out.println(cadenas[4]);
 				} else {
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "en confirmacion de llave simetrica." + REC + "-terminando.");
 				}
 				
@@ -220,7 +227,7 @@ public class D implements Runnable{
 		        sc.close();
 		        
 		        
-		        synchronized (recibo) {
+		        synchronized (file) {
 		        	for (int i=0;i<numCadenas;i++) {
 					    escribirMensaje(cadenas[i]); 
 					   
