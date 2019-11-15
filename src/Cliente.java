@@ -22,7 +22,9 @@ import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
 
-public class Cliente {
+import uniandes.gload.core.Task;
+
+public class Cliente extends Task{
 
 	private final static int PORT = 54321;
 	private final static String HOST = "localhost";
@@ -44,6 +46,7 @@ public class Cliente {
 		}
 	}
 
+	
 	// private static ServerSocket ss;
 	private static Socket cs;
 	private static PrintWriter writer;
@@ -146,9 +149,22 @@ public class Cliente {
 		}
 		return DatatypeConverter.parseBase64Binary(res);
 	}
-
-	public static void main(String[] args) {
+	@Override
+	public  void fail() {
+		System.out.println("Hubo un fallo en el proceso");
 		
+	}
+
+	@Override
+	public void success() {
+		System.out.println("Se realizó correctamente");
+		
+	}
+
+	@Override
+	public void execute() {
+		String cc = "asdshad";
+		String clave = "sajksdakl";
 		try {
 			boolean ok = true;
 			cs = new Socket(HOST, PORT);
@@ -186,23 +202,21 @@ public class Cliente {
 				if (!a1.equals(reto)) {
 					writer.println("ERROR");
 					ok = false;
+					fail();
 				} else {
 					writer.println("OK");
 				}
 			} catch (Exception e) {
 				writer.println("ERROR");
 				ok = false;
+				fail();
 			}
 			if (ok) {
-				Scanner sc = new Scanner(System.in);
-				System.out.println("Ingrese su cedula: ");
-				String cc = sc.nextLine();
+
 				byte[] ccCifrado = cifrarS(ks, "", cc);
 				String ccCifradoS = DatatypeConverter.printBase64Binary(ccCifrado);
 				writer.println(ccCifradoS);
 
-				System.out.println("Ingrese su clave: ");
-				String clave = sc.nextLine();
 				byte[] claveCifrado = cifrarS(ks, "", clave);
 				String claveCifradoS = DatatypeConverter.printBase64Binary(claveCifrado);
 				writer.println(claveCifradoS);
@@ -227,9 +241,11 @@ public class Cliente {
 				if (!(hmacR.equals(hmacBS))) {
 					writer.println("ERROR");
 					ok = false;
+					fail();
 				}
 				else{
 					writer.println("OK");
+					success();
 				}
 			}
 
@@ -237,6 +253,6 @@ public class Cliente {
 
 			e.printStackTrace();
 		}
-
+			
 	}
 }

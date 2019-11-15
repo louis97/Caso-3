@@ -7,6 +7,7 @@ import uniandes.gload.examples.clientserver.generator.ClientServerTask;
 public class Generator {
 	
 	private LoadGenerator generator;
+
 	public Generator(){
 		
 		Task work= createTask();
