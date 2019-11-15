@@ -13,8 +13,6 @@ public class Generator {
 		Task work= createTask();
 		int numberOfTasks = 100;
 		int gapBetweenTasks=1000;
-		D.tiempos = new int[numberOfTasks];
-		D.usosCPU = new int[numberOfTasks];
 		generator= new LoadGenerator("Client - Server Load Test", numberOfTasks, work, gapBetweenTasks);
 		generator.generate();
 	}

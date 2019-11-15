@@ -11,6 +11,7 @@ import java.lang.management.ManagementFactory;
 import java.net.Socket;
 import java.security.KeyPair;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
 import java.util.Random;
 
 import javax.crypto.SecretKey;
@@ -43,8 +44,9 @@ public class D implements Runnable{
 	public static final String INICIO = "INICIO";
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
-	public static int[] tiempos;
-	public static int[] usosCPU;
+	public static ArrayList<Long> tiempos;
+	public static ArrayList<Double> usosCPU;
+	public static ArrayList<Boolean> fallos;
 	public static final int numCadenas = 8;
 	public static double transaccionesPerdidas=0;
 	// Atributos
@@ -118,6 +120,7 @@ public class D implements Runnable{
 				if (!linea.equals(HOLA)) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
+					fallos.add(false);
 				    sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				} else {
@@ -132,6 +135,7 @@ public class D implements Runnable{
 				if (!(linea.contains(SEPARADOR) && linea.split(SEPARADOR)[0].equals(ALGORITMOS))) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
+					fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				}
@@ -141,6 +145,7 @@ public class D implements Runnable{
 					!algoritmos[1].equals(S.BLOWFISH) && !algoritmos[1].equals(S.RC4)){
 					ac.println(ERROR);
 					transaccionesPerdidas++;
+					fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + "Alg.Simetrico" + REC + algoritmos + "-terminando.");
 				}
@@ -148,11 +153,13 @@ public class D implements Runnable{
 					ac.println(ERROR);
 					sc.close();
 					transaccionesPerdidas++;
+					fallos.add(false);
 					throw new Exception(dlg + ERROR + "Alg.Asimetrico." + REC + algoritmos + "-terminando.");
 				}
 				if (!validoAlgHMAC(algoritmos[3])) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
+					fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + "AlgHash." + REC + algoritmos + "-terminando.");
 				}
@@ -193,6 +200,7 @@ public class D implements Runnable{
 				} else {
 					sc.close();
 					transaccionesPerdidas++;
+					fallos.add(false);
 					throw new Exception(dlg + ERROR + "en confirmacion de llave simetrica." + REC + "-terminando.");
 				}
 				
@@ -231,10 +239,12 @@ public class D implements Runnable{
 				linea = dc.readLine();	
 				if (linea.equals(OK)) {
 					cadenas[7] = dlg + "Terminando exitosamente." + linea;
+					fallos.add(true);
 					System.out.println(cadenas[7]);
 				} else {
 					cadenas[7] = dlg + "Terminando con error" + linea;
 			        System.out.println(cadenas[7]);
+			        fallos.add(false);
 			        transaccionesPerdidas++;
 				}
 			     
@@ -247,7 +257,10 @@ public class D implements Runnable{
 					   
 				    }
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
-				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
+				    tiempos.add( total);
+				    double a =getSystemCpuLoad();
+				    escribirMensaje("Porcentage del CPU usado: "+a);
+				    usosCPU.add( a);
 				    escribirMensaje("Porcentaje de error: "+transaccionesPerdidas/100);
 				}
 		        
@@ -270,7 +283,7 @@ public class D implements Runnable{
 		 return ((int)(value * 1000) / 10.0);
 		 }
 	
-	public void generateSheet(String name, int numeroT, int carga) {
+	public static void generateSheet(String name, int numeroT, int carga) {
 		FileInputStream file;
 		try {
 			file = new FileInputStream(new File("pruebas.xlxs"));
@@ -303,6 +316,10 @@ public class D implements Runnable{
 	        Cell cell5 = headerRow.createCell(4);
 	        cell5.setCellValue("Uso de la CPU");
 	        cell5.setCellStyle(headerCellStyle);
+	        
+	        Cell cell6 = headerRow.createCell(5);
+	        cell6.setCellValue("¿Falló?");
+	        cell6.setCellStyle(headerCellStyle);
 	       
 	        Row headerRow1 = sheet.createRow(1);
 	        Cell cell3 = headerRow1.createCell(3);
@@ -313,24 +330,25 @@ public class D implements Runnable{
 	        cell4.setCellValue(carga);
 	        cell4.setCellStyle(headerCellStyle);
 
-	        int rowNum = 1;
-	        for(Employee employee: employees) {
-	            Row row = sheet.createRow(rowNum++);
 
-	            row.createCell(0)
-	                    .setCellValue(employee.getName());
-
-	            row.createCell(1)
-	                    .setCellValue(employee.getEmail());
-
-	            Cell dateOfBirthCell = row.createCell(2);
-	            dateOfBirthCell.setCellValue(employee.getDateOfBirth());
-	            dateOfBirthCell.setCellStyle(dateCellStyle);
+	        for(int i =1; i<numeroT;i++ ) {
+	            Row row = sheet.createRow(i);
 
 	            row.createCell(3)
-	                    .setCellValue(employee.getSalary());
+	                    .setCellValue(tiempos.get(i-1));
+
+	            row.createCell(4)
+	                    .setCellValue(usosCPU.get(i-1));
+	            
+	            row.createCell(5)
+                .setCellValue(fallos.get(i-1));
 	        }
-	        
+	        for(int i = 0; i < 5; i++) {
+	            sheet.autoSizeColumn(i);
+	        }
+	       
+            file.close(); 
+	        workbook.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
