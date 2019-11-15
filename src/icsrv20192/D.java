@@ -283,7 +283,7 @@ public class D implements Runnable{
 		 return ((int)(value * 1000) / 10.0);
 		 }
 	
-	public static void generateSheet(String name, int numeroT, int carga) {
+	public static void generateSheet(String name, int numeroThreads, int carga) {
 		FileInputStream file;
 		try {
 			file = new FileInputStream(new File("pruebas.xlxs"));
@@ -306,7 +306,7 @@ public class D implements Runnable{
 	        cell.setCellStyle(headerCellStyle);
 	        
 	        Cell cell1 = headerRow.createCell(1);
-	        cell1.setCellValue(numeroT);
+	        cell1.setCellValue(numeroThreads);
 	        cell1.setCellStyle(headerCellStyle);
 	        
 	        Cell cell2 = headerRow.createCell(3);
@@ -331,7 +331,7 @@ public class D implements Runnable{
 	        cell4.setCellStyle(headerCellStyle);
 
 
-	        for(int i =1; i<numeroT;i++ ) {
+	        for(int i =1; i< carga ;i++ ) {
 	            Row row = sheet.createRow(i);
 
 	            row.createCell(3)
