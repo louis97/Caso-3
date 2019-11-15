@@ -5,6 +5,7 @@
 	<classpathentry exported="true" kind="lib" path="servidor/bcpkix-jdk15on-161.jar"/>
 	<classpathentry exported="true" kind="lib" path="servidor/bcprov-jdk15on-161.jar"/>
 	<classpathentry exported="true" kind="lib" path="servidor/servidor20192.jar"/>
-	<classpathentry kind="lib" path="servidor/GLoad 1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="servidor/GLoad 1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="servidor/poi-4.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

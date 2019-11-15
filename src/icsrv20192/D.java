@@ -2,7 +2,9 @@ package icsrv20192;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
@@ -19,6 +21,16 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import javax.xml.bind.DatatypeConverter;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CreationHelper;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
 
 public class D implements Runnable{
 
@@ -31,6 +43,8 @@ public class D implements Runnable{
 	public static final String INICIO = "INICIO";
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
+	public static int[] tiempos;
+	public static int[] usosCPU;
 	public static final int numCadenas = 8;
 	public static int transaccionesPerdidas=0;
 	// Atributos
@@ -249,6 +263,73 @@ public class D implements Runnable{
 		 return ((int)(value * 1000) / 10.0);
 		 }
 	
+	public void generateSheet(String name, int numeroT, int carga) {
+		FileInputStream file;
+		try {
+			file = new FileInputStream(new File("pruebas.xlxs"));
+			Workbook workbook = new HSSFWorkbook(file);
+			CreationHelper createHelper = workbook.getCreationHelper();
+
+			Sheet sheet = workbook.createSheet(name);
+
+			Font headerFont = workbook.createFont();
+			headerFont.setBold(true);
+			headerFont.setFontHeightInPoints((short) 14);
+			headerFont.setColor(IndexedColors.BLACK.getIndex());
+
+			CellStyle headerCellStyle = workbook.createCellStyle();
+			headerCellStyle.setFont(headerFont);
+			
+			Row headerRow = sheet.createRow(0);
+	        Cell cell = headerRow.createCell(0);
+	        cell.setCellValue("Numero de threads");
+	        cell.setCellStyle(headerCellStyle);
+	        
+	        Cell cell1 = headerRow.createCell(1);
+	        cell1.setCellValue(numeroT);
+	        cell1.setCellStyle(headerCellStyle);
+	        
+	        Cell cell2 = headerRow.createCell(3);
+	        cell2.setCellValue("Tiempo de transacción");
+	        cell2.setCellStyle(headerCellStyle);
+	        
+	        Cell cell5 = headerRow.createCell(4);
+	        cell5.setCellValue("Uso de la CPU");
+	        cell5.setCellStyle(headerCellStyle);
+	       
+	        Row headerRow1 = sheet.createRow(1);
+	        Cell cell3 = headerRow1.createCell(3);
+	        cell3.setCellValue("Carga");
+	        cell3.setCellStyle(headerCellStyle);
+	        
+	        Cell cell4 = headerRow1.createCell(1);
+	        cell4.setCellValue(carga);
+	        cell4.setCellStyle(headerCellStyle);
+
+	        int rowNum = 1;
+	        for(Employee employee: employees) {
+	            Row row = sheet.createRow(rowNum++);
+
+	            row.createCell(0)
+	                    .setCellValue(employee.getName());
+
+	            row.createCell(1)
+	                    .setCellValue(employee.getEmail());
+
+	            Cell dateOfBirthCell = row.createCell(2);
+	            dateOfBirthCell.setCellValue(employee.getDateOfBirth());
+	            dateOfBirthCell.setCellStyle(dateCellStyle);
+
+	            row.createCell(3)
+	                    .setCellValue(employee.getSalary());
+	        }
+	        
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
 	public static String toHexString(byte[] array) {
 	    return DatatypeConverter.printBase64Binary(array);
 	}

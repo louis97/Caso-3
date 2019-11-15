@@ -29,10 +29,9 @@ import uniandes.gload.core.Task;
 public class Cliente2 extends Task{
 
 	private final static int PORT = 54321;
-	private final static String HOST = "localhost";
+	private final static String HOST = "157.253.201.151";
 
 	private final static String ALGORITMOS = "ALGORITMOS";
-	private final static String PADDING = "AES/ECB/PKCS5Padding";
 
 	private enum ALG {
 		AES("AES"), BLOWFISH("BLOWFISH"), RSA("RSA"), HMACSHA1("HMACSHA1"), HMACSHA256("HMACSHA256"), HMACSHA384(
@@ -55,104 +54,7 @@ public class Cliente2 extends Task{
 	private static Socket cs;
 	private static PrintWriter writer;
 	private static BufferedReader reader;
-	private static PublicKey llavePublicaServidor;
-
-	public static void extraerPKCD(String fromServer) throws CertificateException {
-		// Se parsea el formato hexadecimal del certificado del servidor a un
-		// formato de certificado X509
-		byte[] certificadoBytes = DatatypeConverter.parseBase64Binary(fromServer);
-		
-		CertificateFactory creador = CertificateFactory.getInstance("X.509");
-		InputStream in = new ByteArrayInputStream(certificadoBytes);
-		X509Certificate certificadoServidor = (X509Certificate) creador.generateCertificate(in);
-
-		// Se obtiene la llave publica del servidor a partir del certificado
-		llavePublicaServidor = certificadoServidor.getPublicKey();
-	}
-
-	public static byte[] cifrarA(Key llave, String algoritmo, String texto) {
-		byte[] textoCifrado;
-
-		try {
-			Cipher cifrador = Cipher.getInstance(algoritmo);
-			byte[] textoClaro = texto.getBytes();
-
-			cifrador.init(Cipher.ENCRYPT_MODE, llave);
-			textoCifrado = cifrador.doFinal(textoClaro);
-
-			return textoCifrado;
-		} catch (Exception e) {
-			System.out.println("Excepcion: " + e.getMessage());
-			return null;
-		}
-	}
-
-	public static byte[] cifrarS(SecretKey llave, String algoritmo, String texto) {
-		byte[] textoCifrado;
-
-		try {
-			Cipher cifrador = Cipher.getInstance(PADDING);
-			byte[] textoClaro = texto.getBytes();
-
-			cifrador.init(Cipher.ENCRYPT_MODE, llave);
-			textoCifrado = cifrador.doFinal(textoClaro);
-
-			return textoCifrado;
-		} catch (Exception e) {
-			System.out.println("Excepcion: " + e.getMessage());
-			return null;
-		}
-	}
-
-	public static byte[] descifrarS(SecretKey llave, byte[] texto) {
-		byte[] textoClaro;
-		try {
-			Cipher cifrador = Cipher.getInstance(PADDING);
-			cifrador.init(Cipher.DECRYPT_MODE, llave);
-			textoClaro = cifrador.doFinal(texto);
-
-		} catch (Exception e) {
-			System.out.println("Exception: " + e.getMessage());
-			return null;
-		}
-		return textoClaro;
-	}
-
-	public static byte[] descifrarA(Key llave, String algoritmo, byte[] texto) {
-		byte[] textoClaro;
-
-		try {
-
-			Cipher cifrador = Cipher.getInstance(algoritmo);
-			cifrador.init(Cipher.DECRYPT_MODE, llave);
-			textoClaro = cifrador.doFinal(texto);
-
-		} catch (Exception e) {
-
-			System.out.println("Excepcion: " + e.getMessage());
-			return null;
-
-		}
-
-		return textoClaro;
-	}
-
-	public static byte[] verficarLongCadena(String cadena) {
-		String res = cadena;
-		while (res.length() % 4 != 0) {
-			res = "0" + res;
-
-		}
-		return DatatypeConverter.parseBase64Binary(res);
-	}
-
-	public static byte[] verficarLongCadena16(String cadena) {
-		String res = cadena;
-		while (res.length() % 16 != 0) {
-			System.out.println(res);
-		}
-		return DatatypeConverter.parseBase64Binary(res);
-	}
+	
 	@Override
 	public  void fail() {
 		System.out.println("Hubo un fallo en el proceso");
@@ -183,14 +85,12 @@ public class Cliente2 extends Task{
 
 			String cd = reader.readLine();
 			System.out.println("Certificado del servidor: "+cd);
-			extraerPKCD(cd);
+			
 			KeyGenerator keygen = KeyGenerator.getInstance("AES");
 			SecretKey ks = keygen.generateKey();
 
 			System.out.println("Llave simetrica de sesion: " + DatatypeConverter.printBase64Binary(ks.getEncoded()));
-			String a = new String(ks.getEncoded());
-			byte[] ksCifrada = cifrarA(llavePublicaServidor, ALG.RSA.getS(), a);
-			String ksCifradaS = DatatypeConverter.printBase64Binary(ksCifrada);
+			String ksCifradaS = new String(ks.getEncoded());
 			writer.println(ksCifradaS);
 
 			String reto = "reto";
@@ -198,12 +98,9 @@ public class Cliente2 extends Task{
 			System.out.println("se envió: " + reto);
 
 			cd = reader.readLine();
-			System.out.println("Reto cifrado: " + cd);
+			System.out.println("Reto recibido: " + cd);
 			try {
-				byte[] retoDesc = descifrarS(ks, verficarLongCadena(cd));
-				String a1 = DatatypeConverter.printBase64Binary(retoDesc);
-				System.out.println("reto descifrado: " + a1);
-				if (!a1.equals(reto)) {
+				if (!cd.equals(reto)) {
 					writer.println("ERROR");
 					ok = false;
 					fail();
@@ -217,32 +114,22 @@ public class Cliente2 extends Task{
 			}
 			if (ok) {
 
-				byte[] ccCifrado = cifrarS(ks, "", cc);
-				String ccCifradoS = DatatypeConverter.printBase64Binary(ccCifrado);
-				writer.println(ccCifradoS);
+				writer.println(cc);
+				System.out.println("se envió cc: " + cc);
 
-				byte[] claveCifrado = cifrarS(ks, "", clave);
-				String claveCifradoS = DatatypeConverter.printBase64Binary(claveCifrado);
-				writer.println(claveCifradoS);
+				writer.println(clave);
+				System.out.println("se envió clave: " + clave);
 
-				String cifradoValor = reader.readLine();
-				byte[] descifradoValor = descifrarS(ks, verficarLongCadena(cifradoValor));
-				System.out.println("Valor del ahorro de la cuenta: " + DatatypeConverter.printBase64Binary(descifradoValor));
+				String valor = reader.readLine();
+				
+				System.out.println("Valor del ahorro de la cuenta: " + valor);
 
-				String hmacC = reader.readLine();
-				byte[] hmacB = descifrarA(llavePublicaServidor, ALG.RSA.getS(), verficarLongCadena(hmacC));
-				String hmacBS = DatatypeConverter.printBase64Binary(hmacB);
-
-				HMac hmac = new HMac(new SHA256Digest());;
-				hmac.init(new KeyParameter(ks.getEncoded()));
-				byte[] hashBytes = new byte[hmac.getMacSize()];
-				hmac.update(descifradoValor, 0, descifradoValor.length);
-				hmac.doFinal(hashBytes, 0);
-
-				String hmacR = DatatypeConverter.printBase64Binary(hashBytes);
-				System.out.println("hmac calculado: " + hmacR);
-
-				if (!(hmacR.equals(hmacBS))) {
+				String hvalor = reader.readLine();
+				System.out.println("hvalor recibido: " + hvalor);
+			
+				int hashCode = valor.hashCode();
+				System.out.println("hvalor calculado: " + hashCode);
+				if (!(hashCode==Integer.parseInt(hvalor))) {
 					writer.println("ERROR");
 					ok = false;
 					fail();
@@ -253,7 +140,7 @@ public class Cliente2 extends Task{
 				}
 			}
 
-		} catch (IOException | CertificateException | NoSuchAlgorithmException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			fail();
 		}

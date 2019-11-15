@@ -1,8 +1,8 @@
 package generator;
 
+import icsrv20192.D;
 import uniandes.gload.core.LoadGenerator;
 import uniandes.gload.core.Task;
-import uniandes.gload.examples.clientserver.generator.ClientServerTask;
 
 public class Generator {
 	
@@ -13,6 +13,8 @@ public class Generator {
 		Task work= createTask();
 		int numberOfTasks = 100;
 		int gapBetweenTasks=1000;
+		D.tiempos = new int[numberOfTasks];
+		D.usosCPU = new int[numberOfTasks];
 		generator= new LoadGenerator("Client - Server Load Test", numberOfTasks, work, gapBetweenTasks);
 		generator.generate();
 	}
@@ -23,4 +25,6 @@ public class Generator {
 		@SuppressWarnings("unused")
 		Generator gen= new Generator();
 	}
+	
+	
 }
