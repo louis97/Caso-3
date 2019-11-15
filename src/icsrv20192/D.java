@@ -3,6 +3,7 @@ package icsrv20192;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -284,10 +285,10 @@ public class D implements Runnable{
 		 }
 	
 	public static void generateSheet(String name, int numeroThreads, int carga) {
-		FileInputStream file;
+
 		try {
-			file = new FileInputStream(new File("pruebas.xlxs"));
-			Workbook workbook = new HSSFWorkbook(file);
+			
+			Workbook workbook = new HSSFWorkbook();
 			CreationHelper createHelper = workbook.getCreationHelper();
 
 			Sheet sheet = workbook.createSheet(name);
@@ -347,12 +348,15 @@ public class D implements Runnable{
 	            sheet.autoSizeColumn(i);
 	        }
 	       
-            file.close(); 
+	        FileOutputStream fileOut = new FileOutputStream("pruebalalala.xlsx");
+	        workbook.write(fileOut);
+	        fileOut.close();
 	        workbook.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 
 	}
 	public static String toHexString(byte[] array) {
