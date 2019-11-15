@@ -227,11 +227,13 @@ public class D implements Runnable{
 				    }
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
 				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
+				    escribirMensaje("Porcentaje de error: "+transaccionesPerdidas/100);
 				}
 		        
 	        } catch (Exception e) {
 	          e.printStackTrace();
 	        }
+	        
 	}
 	
 	public double getSystemCpuLoad() throws Exception {

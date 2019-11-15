@@ -23,6 +23,7 @@ import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
 
+import icsrv20192.D;
 import uniandes.gload.core.Task;
 
 public class Cliente extends Task{
@@ -155,7 +156,7 @@ public class Cliente extends Task{
 	@Override
 	public  void fail() {
 		System.out.println("Hubo un fallo en el proceso");
-		
+		D.transaccionesPerdidas++;
 	}
 
 	@Override
@@ -166,8 +167,8 @@ public class Cliente extends Task{
 
 	@Override
 	public void execute() {
-		String cc = "asdshad";
-		String clave = "sajksdakl";
+		String cc ="" +Math.random()*10000;
+		String clave = ""+ Math.random()*100000;
 		try {
 			boolean ok = true;
 			cs = new Socket(HOST, PORT);
@@ -253,8 +254,8 @@ public class Cliente extends Task{
 			}
 
 		} catch (IOException | CertificateException | NoSuchAlgorithmException e) {
-
 			e.printStackTrace();
+			fail();
 		}
 			
 	}
