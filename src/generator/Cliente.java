@@ -1,3 +1,4 @@
+package generator;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -45,7 +46,9 @@ public class Cliente extends Task{
 			return S;
 		}
 	}
-
+   public Cliente(){
+	   
+   }
 	
 	// private static ServerSocket ss;
 	private static Socket cs;

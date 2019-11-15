@@ -17,7 +17,7 @@ public class Generator {
 		generator.generate();
 	}
 	private Task createTask(){
-		return new ClientServerTask();
+		return new Cliente();
 	}
 	public static void main (String ... args){
 		@SuppressWarnings("unused")
