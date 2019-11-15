@@ -109,6 +109,8 @@ public class D2 implements Runnable{
 					ac.println(OK);
 					cadenas[0] = dlg + REC + linea + "-continuando.";
 					System.out.println(cadenas[0]);
+					
+					
 				}
 				
 				/***** Fase 2:  *****/
@@ -227,6 +229,7 @@ public class D2 implements Runnable{
 					    escribirMensaje(cadenas[i]); 
 					   
 				    }
+		        	
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
 				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
 				    escribirMensaje("Porcentaje de error: "+(transaccionesPerdidas/50)*100 +"'%");
