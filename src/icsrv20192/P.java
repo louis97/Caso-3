@@ -10,7 +10,7 @@ import java.net.Socket;
 import java.security.KeyPair;
 import java.security.Security;
 import java.security.cert.X509Certificate;
-
+import java.util.ArrayList;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -20,6 +20,9 @@ public class P {
 	private static X509Certificate certSer; /* acceso default */
 	private static KeyPair keyPairServidor; /* acceso default */
 	public static int numThreads=2;
+	public static ArrayList<Long> tiempos = new ArrayList<Long>();
+	public static ArrayList<Double> usosCPU= new ArrayList<Double>();
+	public static ArrayList<Boolean> fallos= new ArrayList<Boolean>();
 	//private static final int TRANSACCIONES=400;
 
 	/**

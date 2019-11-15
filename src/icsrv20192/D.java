@@ -33,6 +33,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
+import generator.Generator;
+
 
 public class D implements Runnable{
 
@@ -45,9 +47,7 @@ public class D implements Runnable{
 	public static final String INICIO = "INICIO";
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
-	public static ArrayList<Long> tiempos = new ArrayList<Long>();
-	public static ArrayList<Double> usosCPU= new ArrayList<Double>();
-	public static ArrayList<Boolean> fallos= new ArrayList<Boolean>();
+	
 	public static final int numCadenas = 8;
 	public static double transaccionesPerdidas=0;
 	// Atributos
@@ -121,7 +121,7 @@ public class D implements Runnable{
 				if (!linea.equals(HOLA)) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 				    sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				} else {
@@ -136,7 +136,7 @@ public class D implements Runnable{
 				if (!(linea.contains(SEPARADOR) && linea.split(SEPARADOR)[0].equals(ALGORITMOS))) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				}
@@ -146,7 +146,7 @@ public class D implements Runnable{
 					!algoritmos[1].equals(S.BLOWFISH) && !algoritmos[1].equals(S.RC4)){
 					ac.println(ERROR);
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + "Alg.Simetrico" + REC + algoritmos + "-terminando.");
 				}
@@ -154,13 +154,13 @@ public class D implements Runnable{
 					ac.println(ERROR);
 					sc.close();
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 					throw new Exception(dlg + ERROR + "Alg.Asimetrico." + REC + algoritmos + "-terminando.");
 				}
 				if (!validoAlgHMAC(algoritmos[3])) {
 					ac.println(ERROR);
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 					sc.close();
 					throw new Exception(dlg + ERROR + "AlgHash." + REC + algoritmos + "-terminando.");
 				}
@@ -201,7 +201,7 @@ public class D implements Runnable{
 				} else {
 					sc.close();
 					transaccionesPerdidas++;
-					fallos.add(false);
+					P.fallos.add(false);
 					throw new Exception(dlg + ERROR + "en confirmacion de llave simetrica." + REC + "-terminando.");
 				}
 				
@@ -240,12 +240,12 @@ public class D implements Runnable{
 				linea = dc.readLine();	
 				if (linea.equals(OK)) {
 					cadenas[7] = dlg + "Terminando exitosamente." + linea;
-					fallos.add(true);
+					P.fallos.add(true);
 					System.out.println(cadenas[7]);
 				} else {
 					cadenas[7] = dlg + "Terminando con error" + linea;
 			        System.out.println(cadenas[7]);
-			        fallos.add(false);
+			        P.fallos.add(false);
 			        transaccionesPerdidas++;
 				}
 			     
@@ -258,12 +258,15 @@ public class D implements Runnable{
 					   
 				    }
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
-				    tiempos.add( total);
+				    //tiempos.add( total);
 				    double a =getSystemCpuLoad();
 				    escribirMensaje("Porcentage del CPU usado: "+a);
-				    usosCPU.add( a);
-				    escribirMensaje("Porcentaje de error: "+transaccionesPerdidas/100);
+				    P.usosCPU.add( a);
+				    escribirMensaje("Porcentaje de error: "+(transaccionesPerdidas/Generator.numberOfTasks)*100 + "'%");
+				    P.tiempos.add( total);
 				}
+		       
+		       
 		        
 	        } catch (Exception e) {
 	          e.printStackTrace();
@@ -336,13 +339,13 @@ public class D implements Runnable{
 	            Row row = sheet.createRow(i);
 
 	            row.createCell(3)
-	                    .setCellValue(tiempos.get(i-1));
+	                    .setCellValue(P.tiempos.get(i-1));
 
 	            row.createCell(4)
-	                    .setCellValue(usosCPU.get(i-1));
+	                    .setCellValue(P.usosCPU.get(i-1));
 	            
 	            row.createCell(5)
-                .setCellValue(fallos.get(i-1));
+                .setCellValue(P.fallos.get(i-1));
 	        }
 	        for(int i = 0; i < 5; i++) {
 	            sheet.autoSizeColumn(i);
