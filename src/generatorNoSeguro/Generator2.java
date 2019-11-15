@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.*;
 
 import uniandes.gload.core.LoadGenerator;
 import uniandes.gload.core.Task;
-import uniandes.gload.examples.clientserver.generator.ClientServerTask;
+
 
 public class Generator2 {
 

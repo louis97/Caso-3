@@ -32,7 +32,7 @@ public class D2 implements Runnable{
 	public static final String ERROR = "ERROR";
 	public static final String REC = "recibio-";
 	public static final int numCadenas = 8;
-	public static int transaccionesPerdidas=0;
+	public static double transaccionesPerdidas = 0;
 	// Atributos
 	private Socket sc = null;
 	private String dlg;
@@ -102,6 +102,7 @@ public class D2 implements Runnable{
 				cadenas[0] = "Fase1: ";
 				if (!linea.equals(HOLA)) {
 					ac.println(ERROR);
+					transaccionesPerdidas++;
 				    sc.close();
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				} else {
@@ -116,6 +117,7 @@ public class D2 implements Runnable{
 				if (!(linea.contains(SEPARADOR) && linea.split(SEPARADOR)[0].equals(ALGORITMOS))) {
 					ac.println(ERROR);
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + REC + linea +"-terminando.");
 				}
 				
@@ -124,16 +126,19 @@ public class D2 implements Runnable{
 					!algoritmos[1].equals(S2.BLOWFISH) && !algoritmos[1].equals(S2.RC4)){
 					ac.println(ERROR);
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "Alg.Simetrico" + REC + algoritmos + "-terminando.");
 				}
 				if (!algoritmos[2].equals(S2.RSA) ) {
 					ac.println(ERROR);
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "Alg.Asimetrico." + REC + algoritmos + "-terminando.");
 				}
 				if (!validoAlgHMAC(algoritmos[3])) {
 					ac.println(ERROR);
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "AlgHash." + REC + algoritmos + "-terminando.");
 				}
 				cadenas[1] = dlg + REC + linea + "-continuando.";
@@ -150,21 +155,19 @@ public class D2 implements Runnable{
 				cadenas[3] = "";
 				linea = dc.readLine();
 				long cm1= System.currentTimeMillis();
-				byte[] llaveSimetrica = S2.ad(
-						toByteArray(linea), 
-						keyPairServidor.getPrivate(), algoritmos[2] );
-				SecretKey simetrica = new SecretKeySpec(llaveSimetrica, 0, llaveSimetrica.length, algoritmos[1]);
-				cadenas[3] = dlg + "recibio y creo llave simetrica. continuando.";
+				
+				//SecretKey simetrica = new SecretKeySpec(llaveSimetrica, 0, llaveSimetrica.length, algoritmos[1]);
+				cadenas[3] = dlg + "recibio llave simetrica ["+linea+"] . continuando.";
 				System.out.println(cadenas[3]);
 				
 				/***** Fase 5:  *****/
 				cadenas[4]="";
 				linea = dc.readLine();
 				System.out.println(dlg + "Recibio reto del cliente:-" + linea + "-");
-				byte[] retoByte = toByteArray(linea);
-				byte [ ] ciphertext1 = S2.se(retoByte, simetrica, algoritmos[1]);
-				ac.println(toHexString(ciphertext1));
-				System.out.println(dlg + "envio reto cifrado con llave simetrica al cliente. continuado.");
+				//byte[] retoByte = toByteArray(linea);
+				//byte [ ] ciphertext1 = S2.se(retoByte, simetrica, algoritmos[1]);
+				ac.println(linea);  //envia reto
+				System.out.println(dlg + "envio reto al cliente. continuado.");
 
 				linea = dc.readLine();
 				if ((linea.equals(OK))) {
@@ -172,37 +175,36 @@ public class D2 implements Runnable{
 					System.out.println(cadenas[4]);
 				} else {
 					sc.close();
+					transaccionesPerdidas++;
 					throw new Exception(dlg + ERROR + "en confirmacion de llave simetrica." + REC + "-terminando.");
 				}
 				
 				/***** Fase 6:  *****/
 				linea = dc.readLine();				
-				byte[] ccByte = S2.sd(
-						toByteArray(linea), simetrica, algoritmos[1]);
-				String cc = toHexString(ccByte);
-				System.out.println(dlg + "recibio cc y descifro:-" + cc + "-continuado.");
+				//byte[] ccByte = toByteArray(linea);
+				String cc = linea;
+				System.out.println(dlg + "recibio cc :-" + cc + "-continuado.");
 				
 				linea = dc.readLine();				
-				byte[] claveByte = S2.sd(
-						toByteArray(linea), simetrica, algoritmos[1]);
-				String clave = toHexString(claveByte);
-				System.out.println(dlg + "recibio clave y descifro:-" + clave + "-continuado.");
+				//byte[] claveByte = toByteArray(linea);
+				String clave = linea;
+				System.out.println(dlg + "recibio clave:-" + clave + "-continuado.");
 				cadenas[5] = dlg + "recibio cc y clave - continuando";
 				
 				Random rand = new Random(); 
 				int valor = rand.nextInt(1000000);
 				String strvalor = valor+"";
 				while (strvalor.length()%4!=0) strvalor += 0;
-				byte[] valorByte = toByteArray(strvalor);
-				byte [ ] ciphertext2 = S2.se(valorByte, simetrica, algoritmos[1]);
-				ac.println(toHexString(ciphertext2));
-				cadenas[6] = dlg + "envio valor "+strvalor+" cifrado con llave simetrica al cliente. continuado.";
+				//byte[] valorByte = toByteArray(strvalor);
+				//byte [ ] ciphertext2 = S2.se(valorByte, simetrica, algoritmos[1]);
+				ac.println(strvalor);
+				cadenas[6] = dlg + "envio valor "+strvalor+" al cliente. continuado.";
 				System.out.println(cadenas[6]);
 		        
-				byte [] hmac = S2.hdg(valorByte, simetrica, algoritmos[3]);
-				byte[] recibo = S2.ae(hmac, keyPairServidor.getPrivate(), algoritmos[2]);
-				ac.println(toHexString(recibo));
-				System.out.println(dlg + "envio hmac cifrado con llave privada del servidor. continuado.");
+//				byte [] hmac = S2.hdg(valorByte, simetrica, algoritmos[3]);
+//				byte[] recibo = S2.ae(hmac, keyPairServidor.getPrivate(), algoritmos[2]);
+				ac.println(strvalor.hashCode());
+				System.out.println(dlg + "envio hash(valor). continuado.");
 				long cm2= System.currentTimeMillis();
 				long total=cm2-cm1;
 				
@@ -220,14 +222,14 @@ public class D2 implements Runnable{
 		        sc.close();
 		        
 		        
-		        synchronized (recibo) {
+		        synchronized (file) {
 		        	for (int i=0;i<numCadenas;i++) {
 					    escribirMensaje(cadenas[i]); 
 					   
 				    }
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
 				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
-				    escribirMensaje("Porcentaje de error: "+transaccionesPerdidas/100);
+				    escribirMensaje("Porcentaje de error: "+(transaccionesPerdidas/50)*100 +"'%");
 				}
 		        
 	        } catch (Exception e) {
