@@ -66,7 +66,7 @@ public class P {
 
 
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
 
 		for (int i=0; true ;i++) {
 			try { 
@@ -84,7 +84,6 @@ public class P {
 				e.printStackTrace();
 			}
 		}
-		//executor.shutdown();
-			
+		//executor.shutdown();	
 	}
 }
