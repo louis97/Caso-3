@@ -14,6 +14,8 @@ import java.security.cert.X509Certificate;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
+import generator.Generator;
+
 public class P {
 	private static ServerSocket ss;	
 	private static final String MAESTRO = "MAESTRO: ";
@@ -63,7 +65,7 @@ public class P {
 		ss = new ServerSocket(ip);
 		System.out.println(MAESTRO + "Socket creado.");
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
 
 		for (int i=0; true ;i++) {
 			try { 
@@ -81,6 +83,7 @@ public class P {
 				e.printStackTrace();
 			}
 		}
+		//executor.shutdown();
 			
 	}
 }
