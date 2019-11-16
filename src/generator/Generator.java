@@ -5,14 +5,14 @@ import uniandes.gload.core.Task;
 import uniandes.gload.examples.clientserver.generator.ClientServerTask;
 
 public class Generator {
-	
+	public static int numberOfTasks = 10;
+	public static int gapBetweenTasks= 1000;
 	private LoadGenerator generator;
 
 	public Generator(){
 		
 		Task work= createTask();
-		int numberOfTasks = 100;
-		int gapBetweenTasks=1000;
+		
 		generator= new LoadGenerator("Client - Server Load Test", numberOfTasks, work, gapBetweenTasks);
 		generator.generate();
 	}

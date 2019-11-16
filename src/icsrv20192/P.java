@@ -47,8 +47,17 @@ public class P {
 		}
 		FileWriter fw = new FileWriter(file);
 		fw.close();
+		
+		File file2 = null;
+		String ruta2 = "./rx.csv";
+		file2 = new File(ruta2);
+		if (!file2.exists()) {
+			file2.createNewFile();
+		}
+		FileWriter fw2 = new FileWriter(file);
+		fw2.close();
 
-		D.init(certSer, keyPairServidor, file);
+		D.init(certSer, keyPairServidor, file, file2);
 
 		// Crea el socket que escucha en el puerto seleccionado.
 		ss = new ServerSocket(ip);
