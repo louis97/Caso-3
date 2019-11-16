@@ -184,6 +184,8 @@ public class D implements Runnable{
 			linea = dc.readLine();
 			System.out.println(dlg + "Recibio reto del cliente:-" + linea + "-");
 			byte[] retoByte = toByteArray(linea);
+			String re = new String(retoByte);
+			System.out.println(re);
 			byte [ ] ciphertext1 = S.se(retoByte, simetrica, algoritmos[1]);
 			ac.println(toHexString(ciphertext1));
 			System.out.println(dlg + "envio reto cifrado con llave simetrica al cliente. continuado.");
@@ -192,10 +194,10 @@ public class D implements Runnable{
 			if ((linea.equals(OK))) {
 				cadenas[4] = dlg + "recibio confirmacion del cliente:"+ linea +"-continuado.";
 				System.out.println(cadenas[4]);
-			} else {
+			} else if(linea.equals(ERROR)){
 				sc.close();
 				transaccionesPerdidas++;
-				throw new Exception(dlg + ERROR + "en confirmacion de llave simetrica." + REC + "-terminando.");
+				throw new Exception(dlg + ERROR + " en confirmacion de llave simetrica." + REC + "-terminando.");
 			}
 
 			/***** Fase 6:  *****/

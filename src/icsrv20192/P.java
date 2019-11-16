@@ -19,7 +19,6 @@ public class P {
 	private static final String MAESTRO = "MAESTRO: ";
 	private static X509Certificate certSer; /* acceso default */
 	private static KeyPair keyPairServidor; /* acceso default */
-	//private static final int TRANSACCIONES=400;
 
 	/**
 	 * @param args
@@ -63,7 +62,7 @@ public class P {
 		ss = new ServerSocket(ip);
 		System.out.println(MAESTRO + "Socket creado.");
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
 
 		for (int i=0; true ;i++) {
 			try { 

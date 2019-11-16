@@ -29,7 +29,7 @@ import uniandes.gload.core.Task;
 public class Cliente extends Task{
 
 	private final static int PORT = 54321;
-	private final static String HOST = "157.253.202.54";
+	private final static String HOST = "157.253.202.55";
 
 	private final static String ALGORITMOS = "ALGORITMOS";
 	private final static String PADDING = "AES/ECB/PKCS5Padding";
