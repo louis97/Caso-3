@@ -9,6 +9,7 @@ import java.lang.management.ManagementFactory;
 import java.net.Socket;
 import java.security.KeyPair;
 import java.security.cert.X509Certificate;
+import java.util.Base64;
 import java.util.Random;
 
 import javax.crypto.SecretKey;
@@ -171,6 +172,7 @@ public class D implements Runnable{
 			/***** Fase 4: *****/
 			cadenas[3] = "";
 			linea = dc.readLine();
+			System.out.println("Llave leida por el servidor enviada por el cliente: "+linea);
 			long cm1= System.currentTimeMillis();
 			byte[] llaveSimetrica = S.ad(
 					toByteArray(linea), 
@@ -188,7 +190,7 @@ public class D implements Runnable{
 			System.out.println(re);
 			byte [ ] ciphertext1 = S.se(retoByte, simetrica, algoritmos[1]);
 			ac.println(toHexString(ciphertext1));
-			System.out.println(dlg + "envio reto cifrado con llave simetrica al cliente. continuado.");
+			System.out.println(dlg + "envio reto cifrado "+ ciphertext1+" con llave simetrica al cliente. continuado.");
 
 			linea = dc.readLine();
 			if ((linea.equals(OK))) {
@@ -278,10 +280,12 @@ public class D implements Runnable{
 
 	public static String toHexString(byte[] array) {
 		return DatatypeConverter.printBase64Binary(array);
+		//return Base64.getEncoder().encodeToString(array);
 	}
 
 	public static byte[] toByteArray(String s) {
 		return DatatypeConverter.parseBase64Binary(s);
+		//return Base64.getDecoder().decode(s); 
 	}
 
 }

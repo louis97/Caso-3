@@ -53,8 +53,7 @@ public class Cliente extends Task{
 	
 	// private static ServerSocket ss;
 	private static Socket cs;
-	private static PrintWriter writer;
-	private static BufferedReader reader;
+
 	private static PublicKey llavePublicaServidor;
 
 	public static void extraerPKCD(String fromServer) throws CertificateException {
@@ -170,10 +169,11 @@ public class Cliente extends Task{
 		String cc ="" +Math.random()*10000;
 		String clave = ""+ Math.random()*100000;
 		try {
+
 			boolean ok = true;
 			cs = new Socket(HOST, PORT);
-			writer = new PrintWriter(cs.getOutputStream(), true);
-			reader = new BufferedReader(new InputStreamReader(cs.getInputStream()));
+			PrintWriter writer = new PrintWriter(cs.getOutputStream(), true);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(cs.getInputStream()));
 
 			writer.println("HOLA");
 			System.out.println(reader.readLine());
