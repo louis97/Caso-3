@@ -66,7 +66,7 @@ public class P {
 
 
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
 
 		for (int i=0; true ;i++) {
 			try { 

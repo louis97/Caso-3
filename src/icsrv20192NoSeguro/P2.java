@@ -54,7 +54,7 @@ public class P2 {
 		ss = new ServerSocket(ip);
 		System.out.println(MAESTRO + "Socket creado.");
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
 
 		for (int i=0; true ;i++) {
 			try { 
