@@ -19,6 +19,9 @@ import javax.management.MBeanServer;
 import javax.management.ObjectName;
 import javax.xml.bind.DatatypeConverter;
 
+import generator.Generator;
+import generatorNoSeguro.Generator2;
+
 
 public class D2 implements Runnable{
 
@@ -109,6 +112,8 @@ public class D2 implements Runnable{
 					ac.println(OK);
 					cadenas[0] = dlg + REC + linea + "-continuando.";
 					System.out.println(cadenas[0]);
+					
+					
 				}
 				
 				/***** Fase 2:  *****/
@@ -227,9 +232,10 @@ public class D2 implements Runnable{
 					    escribirMensaje(cadenas[i]); 
 					   
 				    }
+		        	
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
 				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
-				    escribirMensaje("Porcentaje de error: "+(transaccionesPerdidas/50)*100 +"'%");
+				    escribirMensaje("Porcentaje de error: "+ (transaccionesPerdidas/Generator2.numberOfTasks)*100 + "'%");
 				}
 		        
 	        } catch (Exception e) {

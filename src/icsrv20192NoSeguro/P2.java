@@ -39,7 +39,7 @@ public class P2 {
 		File file = null;
 		keyPairServidor = S2.grsa();
 		certSer = S2.gc(keyPairServidor);
-		String ruta = "./resultados2.txt";
+		String ruta = "./resultados.txt";
 
 		file = new File(ruta);
 		if (!file.exists()) {
