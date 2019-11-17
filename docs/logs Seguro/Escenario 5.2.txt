@@ -1,0 +1,1540 @@
+delegado 2: recibio-HOLA-continuando.
+delegado 2: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 2: envio certificado del servidor. continuando.
+delegado 2: recibio y creo llave simetrica. continuando.
+delegado 2: recibio confirmacion del cliente:OK-continuado.
+delegado 2: recibio cc y clave - continuando
+delegado 2: envio valor 63305900 cifrado con llave simetrica al cliente. continuado.
+delegado 2: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 5
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 0.5%
+delegado 1: recibio-HOLA-continuando.
+delegado 1: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 1: envio certificado del servidor. continuando.
+delegado 1: recibio y creo llave simetrica. continuando.
+delegado 1: recibio confirmacion del cliente:OK-continuado.
+delegado 1: recibio cc y clave - continuando
+delegado 1: envio valor 19421800 cifrado con llave simetrica al cliente. continuado.
+delegado 1: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 186
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.0%
+delegado 4: recibio-HOLA-continuando.
+delegado 4: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 4: envio certificado del servidor. continuando.
+delegado 4: recibio y creo llave simetrica. continuando.
+delegado 4: recibio confirmacion del cliente:OK-continuado.
+delegado 4: recibio cc y clave - continuando
+delegado 4: envio valor 84232400 cifrado con llave simetrica al cliente. continuado.
+delegado 4: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.0%
+delegado 5: recibio-HOLA-continuando.
+delegado 5: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 5: envio certificado del servidor. continuando.
+delegado 5: recibio y creo llave simetrica. continuando.
+delegado 5: recibio confirmacion del cliente:OK-continuado.
+delegado 5: recibio cc y clave - continuando
+delegado 5: envio valor 54951100 cifrado con llave simetrica al cliente. continuado.
+delegado 5: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.0%
+delegado 6: recibio-HOLA-continuando.
+delegado 6: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 6: envio certificado del servidor. continuando.
+delegado 6: recibio y creo llave simetrica. continuando.
+delegado 6: recibio confirmacion del cliente:OK-continuado.
+delegado 6: recibio cc y clave - continuando
+delegado 6: envio valor 47242400 cifrado con llave simetrica al cliente. continuado.
+delegado 6: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.0%
+delegado 7: recibio-HOLA-continuando.
+delegado 7: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 7: envio certificado del servidor. continuando.
+delegado 7: recibio y creo llave simetrica. continuando.
+delegado 7: recibio confirmacion del cliente:OK-continuado.
+delegado 7: recibio cc y clave - continuando
+delegado 7: envio valor 32513000 cifrado con llave simetrica al cliente. continuado.
+delegado 7: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.0%
+delegado 8: recibio-HOLA-continuando.
+delegado 8: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 8: envio certificado del servidor. continuando.
+delegado 8: recibio y creo llave simetrica. continuando.
+delegado 8: recibio confirmacion del cliente:OK-continuado.
+delegado 8: recibio cc y clave - continuando
+delegado 8: envio valor 75375400 cifrado con llave simetrica al cliente. continuado.
+delegado 8: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 4
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 1.5%
+delegado 10: recibio-HOLA-continuando.
+delegado 10: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 10: envio certificado del servidor. continuando.
+delegado 10: recibio y creo llave simetrica. continuando.
+delegado 10: recibio confirmacion del cliente:OK-continuado.
+delegado 10: recibio cc y clave - continuando
+delegado 10: envio valor 74312900 cifrado con llave simetrica al cliente. continuado.
+delegado 10: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 0.0
+Porcentaje de error: 2.0%
+delegado 12: recibio-HOLA-continuando.
+delegado 12: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 12: envio certificado del servidor. continuando.
+delegado 12: recibio y creo llave simetrica. continuando.
+delegado 12: recibio confirmacion del cliente:OK-continuado.
+delegado 12: recibio cc y clave - continuando
+delegado 12: envio valor 51340300 cifrado con llave simetrica al cliente. continuado.
+delegado 12: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 2.0%
+delegado 13: recibio-HOLA-continuando.
+delegado 13: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 13: envio certificado del servidor. continuando.
+delegado 13: recibio y creo llave simetrica. continuando.
+delegado 13: recibio confirmacion del cliente:OK-continuado.
+delegado 13: recibio cc y clave - continuando
+delegado 13: envio valor 61450800 cifrado con llave simetrica al cliente. continuado.
+delegado 13: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 3.5000000000000004%
+delegado 17: recibio-HOLA-continuando.
+delegado 17: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 17: envio certificado del servidor. continuando.
+delegado 17: recibio y creo llave simetrica. continuando.
+delegado 17: recibio confirmacion del cliente:OK-continuado.
+delegado 17: recibio cc y clave - continuando
+delegado 17: envio valor 73058400 cifrado con llave simetrica al cliente. continuado.
+delegado 17: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 4
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 3.5000000000000004%
+delegado 18: recibio-HOLA-continuando.
+delegado 18: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 18: envio certificado del servidor. continuando.
+delegado 18: recibio y creo llave simetrica. continuando.
+delegado 18: recibio confirmacion del cliente:OK-continuado.
+delegado 18: recibio cc y clave - continuando
+delegado 18: envio valor 41823100 cifrado con llave simetrica al cliente. continuado.
+delegado 18: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 4
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 3.5000000000000004%
+delegado 19: recibio-HOLA-continuando.
+delegado 19: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 19: envio certificado del servidor. continuando.
+delegado 19: recibio y creo llave simetrica. continuando.
+delegado 19: recibio confirmacion del cliente:OK-continuado.
+delegado 19: recibio cc y clave - continuando
+delegado 19: envio valor 24514100 cifrado con llave simetrica al cliente. continuado.
+delegado 19: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 3.5000000000000004%
+delegado 20: recibio-HOLA-continuando.
+delegado 20: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 20: envio certificado del servidor. continuando.
+delegado 20: recibio y creo llave simetrica. continuando.
+delegado 20: recibio confirmacion del cliente:OK-continuado.
+delegado 20: recibio cc y clave - continuando
+delegado 20: envio valor 58177800 cifrado con llave simetrica al cliente. continuado.
+delegado 20: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 5.0%
+delegado 24: recibio-HOLA-continuando.
+delegado 24: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 24: envio certificado del servidor. continuando.
+delegado 24: recibio y creo llave simetrica. continuando.
+delegado 24: recibio confirmacion del cliente:OK-continuado.
+delegado 24: recibio cc y clave - continuando
+delegado 24: envio valor 64998600 cifrado con llave simetrica al cliente. continuado.
+delegado 24: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 5.5%
+delegado 26: recibio-HOLA-continuando.
+delegado 26: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 26: envio certificado del servidor. continuando.
+delegado 26: recibio y creo llave simetrica. continuando.
+delegado 26: recibio confirmacion del cliente:OK-continuado.
+delegado 26: recibio cc y clave - continuando
+delegado 26: envio valor 53887900 cifrado con llave simetrica al cliente. continuado.
+delegado 26: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 6.0%
+delegado 28: recibio-HOLA-continuando.
+delegado 28: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 28: envio certificado del servidor. continuando.
+delegado 28: recibio y creo llave simetrica. continuando.
+delegado 28: recibio confirmacion del cliente:OK-continuado.
+delegado 28: recibio cc y clave - continuando
+delegado 28: envio valor 78855300 cifrado con llave simetrica al cliente. continuado.
+delegado 28: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 6.0%
+delegado 29: recibio-HOLA-continuando.
+delegado 29: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 29: envio certificado del servidor. continuando.
+delegado 29: recibio y creo llave simetrica. continuando.
+delegado 29: recibio confirmacion del cliente:OK-continuado.
+delegado 29: recibio cc y clave - continuando
+delegado 29: envio valor 61991000 cifrado con llave simetrica al cliente. continuado.
+delegado 29: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.9
+Porcentaje de error: 6.0%
+delegado 30: recibio-HOLA-continuando.
+delegado 30: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 30: envio certificado del servidor. continuando.
+delegado 30: recibio y creo llave simetrica. continuando.
+delegado 30: recibio confirmacion del cliente:OK-continuado.
+delegado 30: recibio cc y clave - continuando
+delegado 30: envio valor 19806200 cifrado con llave simetrica al cliente. continuado.
+delegado 30: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 6.5%
+delegado 32: recibio-HOLA-continuando.
+delegado 32: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 32: envio certificado del servidor. continuando.
+delegado 32: recibio y creo llave simetrica. continuando.
+delegado 32: recibio confirmacion del cliente:OK-continuado.
+delegado 32: recibio cc y clave - continuando
+delegado 32: envio valor 24559900 cifrado con llave simetrica al cliente. continuado.
+delegado 32: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 6.5%
+delegado 33: recibio-HOLA-continuando.
+delegado 33: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 33: envio certificado del servidor. continuando.
+delegado 33: recibio y creo llave simetrica. continuando.
+delegado 33: recibio confirmacion del cliente:OK-continuado.
+delegado 33: recibio cc y clave - continuando
+delegado 33: envio valor 71584000 cifrado con llave simetrica al cliente. continuado.
+delegado 33: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 6.5%
+delegado 34: recibio-HOLA-continuando.
+delegado 34: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 34: envio certificado del servidor. continuando.
+delegado 34: recibio y creo llave simetrica. continuando.
+delegado 34: recibio confirmacion del cliente:OK-continuado.
+delegado 34: recibio cc y clave - continuando
+delegado 34: envio valor 10857700 cifrado con llave simetrica al cliente. continuado.
+delegado 34: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 7.000000000000001%
+delegado 36: recibio-HOLA-continuando.
+delegado 36: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 36: envio certificado del servidor. continuando.
+delegado 36: recibio y creo llave simetrica. continuando.
+delegado 36: recibio confirmacion del cliente:OK-continuado.
+delegado 36: recibio cc y clave - continuando
+delegado 36: envio valor 36254500 cifrado con llave simetrica al cliente. continuado.
+delegado 36: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 7.000000000000001%
+delegado 37: recibio-HOLA-continuando.
+delegado 37: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 37: envio certificado del servidor. continuando.
+delegado 37: recibio y creo llave simetrica. continuando.
+delegado 37: recibio confirmacion del cliente:OK-continuado.
+delegado 37: recibio cc y clave - continuando
+delegado 37: envio valor 56505900 cifrado con llave simetrica al cliente. continuado.
+delegado 37: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 8.0%
+delegado 40: recibio-HOLA-continuando.
+delegado 40: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 40: envio certificado del servidor. continuando.
+delegado 40: recibio y creo llave simetrica. continuando.
+delegado 40: recibio confirmacion del cliente:OK-continuado.
+delegado 40: recibio cc y clave - continuando
+delegado 40: envio valor 93914000 cifrado con llave simetrica al cliente. continuado.
+delegado 40: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 8.0%
+delegado 41: recibio-HOLA-continuando.
+delegado 41: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 41: envio certificado del servidor. continuando.
+delegado 41: recibio y creo llave simetrica. continuando.
+delegado 41: recibio confirmacion del cliente:OK-continuado.
+delegado 41: recibio cc y clave - continuando
+delegado 41: envio valor 83981900 cifrado con llave simetrica al cliente. continuado.
+delegado 41: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 8.0%
+delegado 42: recibio-HOLA-continuando.
+delegado 42: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 42: envio certificado del servidor. continuando.
+delegado 42: recibio y creo llave simetrica. continuando.
+delegado 42: recibio confirmacion del cliente:OK-continuado.
+delegado 42: recibio cc y clave - continuando
+delegado 42: envio valor 6056 cifrado con llave simetrica al cliente. continuado.
+delegado 42: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 40.1
+Porcentaje de error: 8.0%
+delegado 43: recibio-HOLA-continuando.
+delegado 43: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 43: envio certificado del servidor. continuando.
+delegado 43: recibio y creo llave simetrica. continuando.
+delegado 43: recibio confirmacion del cliente:OK-continuado.
+delegado 43: recibio cc y clave - continuando
+delegado 43: envio valor 51251800 cifrado con llave simetrica al cliente. continuado.
+delegado 43: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 8.5%
+delegado 45: recibio-HOLA-continuando.
+delegado 45: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 45: envio certificado del servidor. continuando.
+delegado 45: recibio y creo llave simetrica. continuando.
+delegado 45: recibio confirmacion del cliente:OK-continuado.
+delegado 45: recibio cc y clave - continuando
+delegado 45: envio valor 69657300 cifrado con llave simetrica al cliente. continuado.
+delegado 45: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 9.0%
+delegado 47: recibio-HOLA-continuando.
+delegado 47: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 47: envio certificado del servidor. continuando.
+delegado 47: recibio y creo llave simetrica. continuando.
+delegado 47: recibio confirmacion del cliente:OK-continuado.
+delegado 47: recibio cc y clave - continuando
+delegado 47: envio valor 85567600 cifrado con llave simetrica al cliente. continuado.
+delegado 47: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 9.0%
+delegado 48: recibio-HOLA-continuando.
+delegado 48: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 48: envio certificado del servidor. continuando.
+delegado 48: recibio y creo llave simetrica. continuando.
+delegado 48: recibio confirmacion del cliente:OK-continuado.
+delegado 48: recibio cc y clave - continuando
+delegado 48: envio valor 78101200 cifrado con llave simetrica al cliente. continuado.
+delegado 48: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 9.0%
+delegado 49: recibio-HOLA-continuando.
+delegado 49: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 49: envio certificado del servidor. continuando.
+delegado 49: recibio y creo llave simetrica. continuando.
+delegado 49: recibio confirmacion del cliente:OK-continuado.
+delegado 49: recibio cc y clave - continuando
+delegado 49: envio valor 99922000 cifrado con llave simetrica al cliente. continuado.
+delegado 49: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 9.0%
+delegado 50: recibio-HOLA-continuando.
+delegado 50: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 50: envio certificado del servidor. continuando.
+delegado 50: recibio y creo llave simetrica. continuando.
+delegado 50: recibio confirmacion del cliente:OK-continuado.
+delegado 50: recibio cc y clave - continuando
+delegado 50: envio valor 89134000 cifrado con llave simetrica al cliente. continuado.
+delegado 50: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 10.0%
+delegado 53: recibio-HOLA-continuando.
+delegado 53: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 53: envio certificado del servidor. continuando.
+delegado 53: recibio y creo llave simetrica. continuando.
+delegado 53: recibio confirmacion del cliente:OK-continuado.
+delegado 53: recibio cc y clave - continuando
+delegado 53: envio valor 50804700 cifrado con llave simetrica al cliente. continuado.
+delegado 53: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 10.0%
+delegado 54: recibio-HOLA-continuando.
+delegado 54: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 54: envio certificado del servidor. continuando.
+delegado 54: recibio y creo llave simetrica. continuando.
+delegado 54: recibio confirmacion del cliente:OK-continuado.
+delegado 54: recibio cc y clave - continuando
+delegado 54: envio valor 12109500 cifrado con llave simetrica al cliente. continuado.
+delegado 54: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 11.0%
+delegado 57: recibio-HOLA-continuando.
+delegado 57: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 57: envio certificado del servidor. continuando.
+delegado 57: recibio y creo llave simetrica. continuando.
+delegado 57: recibio confirmacion del cliente:OK-continuado.
+delegado 57: recibio cc y clave - continuando
+delegado 57: envio valor 26960000 cifrado con llave simetrica al cliente. continuado.
+delegado 57: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.4
+Porcentaje de error: 11.0%
+delegado 58: recibio-HOLA-continuando.
+delegado 58: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 58: envio certificado del servidor. continuando.
+delegado 58: recibio y creo llave simetrica. continuando.
+delegado 58: recibio confirmacion del cliente:OK-continuado.
+delegado 58: recibio cc y clave - continuando
+delegado 58: envio valor 72659500 cifrado con llave simetrica al cliente. continuado.
+delegado 58: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 11.5%
+delegado 60: recibio-HOLA-continuando.
+delegado 60: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 60: envio certificado del servidor. continuando.
+delegado 60: recibio y creo llave simetrica. continuando.
+delegado 60: recibio confirmacion del cliente:OK-continuado.
+delegado 60: recibio cc y clave - continuando
+delegado 60: envio valor 68938600 cifrado con llave simetrica al cliente. continuado.
+delegado 60: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 12.5%
+delegado 63: recibio-HOLA-continuando.
+delegado 63: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 63: envio certificado del servidor. continuando.
+delegado 63: recibio y creo llave simetrica. continuando.
+delegado 63: recibio confirmacion del cliente:OK-continuado.
+delegado 63: recibio cc y clave - continuando
+delegado 63: envio valor 23014600 cifrado con llave simetrica al cliente. continuado.
+delegado 63: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 13.0%
+delegado 65: recibio-HOLA-continuando.
+delegado 65: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 65: envio certificado del servidor. continuando.
+delegado 65: recibio y creo llave simetrica. continuando.
+delegado 65: recibio confirmacion del cliente:OK-continuado.
+delegado 65: recibio cc y clave - continuando
+delegado 65: envio valor 46058700 cifrado con llave simetrica al cliente. continuado.
+delegado 65: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 13.0%
+delegado 66: recibio-HOLA-continuando.
+delegado 66: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 66: envio certificado del servidor. continuando.
+delegado 66: recibio y creo llave simetrica. continuando.
+delegado 66: recibio confirmacion del cliente:OK-continuado.
+delegado 66: recibio cc y clave - continuando
+delegado 66: envio valor 87805900 cifrado con llave simetrica al cliente. continuado.
+delegado 66: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 14.499999999999998%
+delegado 70: recibio-HOLA-continuando.
+delegado 70: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 70: envio certificado del servidor. continuando.
+delegado 70: recibio y creo llave simetrica. continuando.
+delegado 70: recibio confirmacion del cliente:OK-continuado.
+delegado 70: recibio cc y clave - continuando
+delegado 70: envio valor 53103000 cifrado con llave simetrica al cliente. continuado.
+delegado 70: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 14.499999999999998%
+delegado 71: recibio-HOLA-continuando.
+delegado 71: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 71: envio certificado del servidor. continuando.
+delegado 71: recibio y creo llave simetrica. continuando.
+delegado 71: recibio confirmacion del cliente:OK-continuado.
+delegado 71: recibio cc y clave - continuando
+delegado 71: envio valor 29767500 cifrado con llave simetrica al cliente. continuado.
+delegado 71: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 15.0%
+delegado 73: recibio-HOLA-continuando.
+delegado 73: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 73: envio certificado del servidor. continuando.
+delegado 73: recibio y creo llave simetrica. continuando.
+delegado 73: recibio confirmacion del cliente:OK-continuado.
+delegado 73: recibio cc y clave - continuando
+delegado 73: envio valor 16709400 cifrado con llave simetrica al cliente. continuado.
+delegado 73: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 1
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 16.5%
+delegado 77: recibio-HOLA-continuando.
+delegado 77: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 77: envio certificado del servidor. continuando.
+delegado 77: recibio y creo llave simetrica. continuando.
+delegado 77: recibio confirmacion del cliente:OK-continuado.
+delegado 77: recibio cc y clave - continuando
+delegado 77: envio valor 83810000 cifrado con llave simetrica al cliente. continuado.
+delegado 77: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 45.1
+Porcentaje de error: 16.5%
+delegado 78: recibio-HOLA-continuando.
+delegado 78: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 78: envio certificado del servidor. continuando.
+delegado 78: recibio y creo llave simetrica. continuando.
+delegado 78: recibio confirmacion del cliente:OK-continuado.
+delegado 78: recibio cc y clave - continuando
+delegado 78: envio valor 67802300 cifrado con llave simetrica al cliente. continuado.
+delegado 78: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 16.5%
+delegado 79: recibio-HOLA-continuando.
+delegado 79: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 79: envio certificado del servidor. continuando.
+delegado 79: recibio y creo llave simetrica. continuando.
+delegado 79: recibio confirmacion del cliente:OK-continuado.
+delegado 79: recibio cc y clave - continuando
+delegado 79: envio valor 78915300 cifrado con llave simetrica al cliente. continuado.
+delegado 79: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 17.0%
+delegado 81: recibio-HOLA-continuando.
+delegado 81: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 81: envio certificado del servidor. continuando.
+delegado 81: recibio y creo llave simetrica. continuando.
+delegado 81: recibio confirmacion del cliente:OK-continuado.
+delegado 81: recibio cc y clave - continuando
+delegado 81: envio valor 19648500 cifrado con llave simetrica al cliente. continuado.
+delegado 81: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 17.0%
+delegado 82: recibio-HOLA-continuando.
+delegado 82: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 82: envio certificado del servidor. continuando.
+delegado 82: recibio y creo llave simetrica. continuando.
+delegado 82: recibio confirmacion del cliente:OK-continuado.
+delegado 82: recibio cc y clave - continuando
+delegado 82: envio valor 46571400 cifrado con llave simetrica al cliente. continuado.
+delegado 82: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 17.0%
+delegado 83: recibio-HOLA-continuando.
+delegado 83: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 83: envio certificado del servidor. continuando.
+delegado 83: recibio y creo llave simetrica. continuando.
+delegado 83: recibio confirmacion del cliente:OK-continuado.
+delegado 83: recibio cc y clave - continuando
+delegado 83: envio valor 91860100 cifrado con llave simetrica al cliente. continuado.
+delegado 83: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 18.0%
+delegado 86: recibio-HOLA-continuando.
+delegado 86: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 86: envio certificado del servidor. continuando.
+delegado 86: recibio y creo llave simetrica. continuando.
+delegado 86: recibio confirmacion del cliente:OK-continuado.
+delegado 86: recibio cc y clave - continuando
+delegado 86: envio valor 37173200 cifrado con llave simetrica al cliente. continuado.
+delegado 86: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 18.0%
+delegado 87: recibio-HOLA-continuando.
+delegado 87: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 87: envio certificado del servidor. continuando.
+delegado 87: recibio y creo llave simetrica. continuando.
+delegado 87: recibio confirmacion del cliente:OK-continuado.
+delegado 87: recibio cc y clave - continuando
+delegado 87: envio valor 86707500 cifrado con llave simetrica al cliente. continuado.
+delegado 87: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 18.5%
+delegado 89: recibio-HOLA-continuando.
+delegado 89: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 89: envio certificado del servidor. continuando.
+delegado 89: recibio y creo llave simetrica. continuando.
+delegado 89: recibio confirmacion del cliente:OK-continuado.
+delegado 89: recibio cc y clave - continuando
+delegado 89: envio valor 98824000 cifrado con llave simetrica al cliente. continuado.
+delegado 89: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 18.5%
+delegado 90: recibio-HOLA-continuando.
+delegado 90: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 90: envio certificado del servidor. continuando.
+delegado 90: recibio y creo llave simetrica. continuando.
+delegado 90: recibio confirmacion del cliente:OK-continuado.
+delegado 90: recibio cc y clave - continuando
+delegado 90: envio valor 97575300 cifrado con llave simetrica al cliente. continuado.
+delegado 90: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.3
+Porcentaje de error: 19.5%
+delegado 93: recibio-HOLA-continuando.
+delegado 93: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 93: envio certificado del servidor. continuando.
+delegado 93: recibio y creo llave simetrica. continuando.
+delegado 93: recibio confirmacion del cliente:OK-continuado.
+delegado 93: recibio cc y clave - continuando
+delegado 93: envio valor 59127100 cifrado con llave simetrica al cliente. continuado.
+delegado 93: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 19.5%
+delegado 94: recibio-HOLA-continuando.
+delegado 94: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 94: envio certificado del servidor. continuando.
+delegado 94: recibio y creo llave simetrica. continuando.
+delegado 94: recibio confirmacion del cliente:OK-continuado.
+delegado 94: recibio cc y clave - continuando
+delegado 94: envio valor 41492900 cifrado con llave simetrica al cliente. continuado.
+delegado 94: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 19.5%
+delegado 95: recibio-HOLA-continuando.
+delegado 95: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 95: envio certificado del servidor. continuando.
+delegado 95: recibio y creo llave simetrica. continuando.
+delegado 95: recibio confirmacion del cliente:OK-continuado.
+delegado 95: recibio cc y clave - continuando
+delegado 95: envio valor 91799400 cifrado con llave simetrica al cliente. continuado.
+delegado 95: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 20.0%
+delegado 97: recibio-HOLA-continuando.
+delegado 97: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 97: envio certificado del servidor. continuando.
+delegado 97: recibio y creo llave simetrica. continuando.
+delegado 97: recibio confirmacion del cliente:OK-continuado.
+delegado 97: recibio cc y clave - continuando
+delegado 97: envio valor 33023000 cifrado con llave simetrica al cliente. continuado.
+delegado 97: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 20.0%
+delegado 98: recibio-HOLA-continuando.
+delegado 98: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 98: envio certificado del servidor. continuando.
+delegado 98: recibio y creo llave simetrica. continuando.
+delegado 98: recibio confirmacion del cliente:OK-continuado.
+delegado 98: recibio cc y clave - continuando
+delegado 98: envio valor 64331600 cifrado con llave simetrica al cliente. continuado.
+delegado 98: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 21.5%
+delegado 102: recibio-HOLA-continuando.
+delegado 102: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 102: envio certificado del servidor. continuando.
+delegado 102: recibio y creo llave simetrica. continuando.
+delegado 102: recibio confirmacion del cliente:OK-continuado.
+delegado 102: recibio cc y clave - continuando
+delegado 102: envio valor 55446600 cifrado con llave simetrica al cliente. continuado.
+delegado 102: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 21.5%
+delegado 103: recibio-HOLA-continuando.
+delegado 103: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 103: envio certificado del servidor. continuando.
+delegado 103: recibio y creo llave simetrica. continuando.
+delegado 103: recibio confirmacion del cliente:OK-continuado.
+delegado 103: recibio cc y clave - continuando
+delegado 103: envio valor 22644100 cifrado con llave simetrica al cliente. continuado.
+delegado 103: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 43.4
+Porcentaje de error: 21.5%
+delegado 104: recibio-HOLA-continuando.
+delegado 104: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 104: envio certificado del servidor. continuando.
+delegado 104: recibio y creo llave simetrica. continuando.
+delegado 104: recibio confirmacion del cliente:OK-continuado.
+delegado 104: recibio cc y clave - continuando
+delegado 104: envio valor 24241000 cifrado con llave simetrica al cliente. continuado.
+delegado 104: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 21.5%
+delegado 105: recibio-HOLA-continuando.
+delegado 105: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 105: envio certificado del servidor. continuando.
+delegado 105: recibio y creo llave simetrica. continuando.
+delegado 105: recibio confirmacion del cliente:OK-continuado.
+delegado 105: recibio cc y clave - continuando
+delegado 105: envio valor 40797800 cifrado con llave simetrica al cliente. continuado.
+delegado 105: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 21.5%
+delegado 106: recibio-HOLA-continuando.
+delegado 106: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 106: envio certificado del servidor. continuando.
+delegado 106: recibio y creo llave simetrica. continuando.
+delegado 106: recibio confirmacion del cliente:OK-continuado.
+delegado 106: recibio cc y clave - continuando
+delegado 106: envio valor 73469500 cifrado con llave simetrica al cliente. continuado.
+delegado 106: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 21.5%
+delegado 107: recibio-HOLA-continuando.
+delegado 107: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 107: envio certificado del servidor. continuando.
+delegado 107: recibio y creo llave simetrica. continuando.
+delegado 107: recibio confirmacion del cliente:OK-continuado.
+delegado 107: recibio cc y clave - continuando
+delegado 107: envio valor 37813600 cifrado con llave simetrica al cliente. continuado.
+delegado 107: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 21.5%
+delegado 108: recibio-HOLA-continuando.
+delegado 108: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 108: envio certificado del servidor. continuando.
+delegado 108: recibio y creo llave simetrica. continuando.
+delegado 108: recibio confirmacion del cliente:OK-continuado.
+delegado 108: recibio cc y clave - continuando
+delegado 108: envio valor 87230800 cifrado con llave simetrica al cliente. continuado.
+delegado 108: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 22.0%
+delegado 110: recibio-HOLA-continuando.
+delegado 110: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 110: envio certificado del servidor. continuando.
+delegado 110: recibio y creo llave simetrica. continuando.
+delegado 110: recibio confirmacion del cliente:OK-continuado.
+delegado 110: recibio cc y clave - continuando
+delegado 110: envio valor 46585700 cifrado con llave simetrica al cliente. continuado.
+delegado 110: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 1
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 22.5%
+delegado 112: recibio-HOLA-continuando.
+delegado 112: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 112: envio certificado del servidor. continuando.
+delegado 112: recibio y creo llave simetrica. continuando.
+delegado 112: recibio confirmacion del cliente:OK-continuado.
+delegado 112: recibio cc y clave - continuando
+delegado 112: envio valor 29523500 cifrado con llave simetrica al cliente. continuado.
+delegado 112: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 22.5%
+delegado 113: recibio-HOLA-continuando.
+delegado 113: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 113: envio certificado del servidor. continuando.
+delegado 113: recibio y creo llave simetrica. continuando.
+delegado 113: recibio confirmacion del cliente:OK-continuado.
+delegado 113: recibio cc y clave - continuando
+delegado 113: envio valor 48640000 cifrado con llave simetrica al cliente. continuado.
+delegado 113: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 23.0%
+delegado 115: recibio-HOLA-continuando.
+delegado 115: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 115: envio certificado del servidor. continuando.
+delegado 115: recibio y creo llave simetrica. continuando.
+delegado 115: recibio confirmacion del cliente:OK-continuado.
+delegado 115: recibio cc y clave - continuando
+delegado 115: envio valor 13817000 cifrado con llave simetrica al cliente. continuado.
+delegado 115: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.9
+Porcentaje de error: 23.0%
+delegado 116: recibio-HOLA-continuando.
+delegado 116: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 116: envio certificado del servidor. continuando.
+delegado 116: recibio y creo llave simetrica. continuando.
+delegado 116: recibio confirmacion del cliente:OK-continuado.
+delegado 116: recibio cc y clave - continuando
+delegado 116: envio valor 68736000 cifrado con llave simetrica al cliente. continuado.
+delegado 116: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 23.5%
+delegado 118: recibio-HOLA-continuando.
+delegado 118: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 118: envio certificado del servidor. continuando.
+delegado 118: recibio y creo llave simetrica. continuando.
+delegado 118: recibio confirmacion del cliente:OK-continuado.
+delegado 118: recibio cc y clave - continuando
+delegado 118: envio valor 71763000 cifrado con llave simetrica al cliente. continuado.
+delegado 118: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 23.5%
+delegado 119: recibio-HOLA-continuando.
+delegado 119: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 119: envio certificado del servidor. continuando.
+delegado 119: recibio y creo llave simetrica. continuando.
+delegado 119: recibio confirmacion del cliente:OK-continuado.
+delegado 119: recibio cc y clave - continuando
+delegado 119: envio valor 93258100 cifrado con llave simetrica al cliente. continuado.
+delegado 119: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 23.5%
+delegado 120: recibio-HOLA-continuando.
+delegado 120: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 120: envio certificado del servidor. continuando.
+delegado 120: recibio y creo llave simetrica. continuando.
+delegado 120: recibio confirmacion del cliente:OK-continuado.
+delegado 120: recibio cc y clave - continuando
+delegado 120: envio valor 27274000 cifrado con llave simetrica al cliente. continuado.
+delegado 120: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 24.0%
+delegado 122: recibio-HOLA-continuando.
+delegado 122: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 122: envio certificado del servidor. continuando.
+delegado 122: recibio y creo llave simetrica. continuando.
+delegado 122: recibio confirmacion del cliente:OK-continuado.
+delegado 122: recibio cc y clave - continuando
+delegado 122: envio valor 12831900 cifrado con llave simetrica al cliente. continuado.
+delegado 122: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 24.0%
+delegado 123: recibio-HOLA-continuando.
+delegado 123: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 123: envio certificado del servidor. continuando.
+delegado 123: recibio y creo llave simetrica. continuando.
+delegado 123: recibio confirmacion del cliente:OK-continuado.
+delegado 123: recibio cc y clave - continuando
+delegado 123: envio valor 92444400 cifrado con llave simetrica al cliente. continuado.
+delegado 123: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 24.0%
+delegado 124: recibio-HOLA-continuando.
+delegado 124: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 124: envio certificado del servidor. continuando.
+delegado 124: recibio y creo llave simetrica. continuando.
+delegado 124: recibio confirmacion del cliente:OK-continuado.
+delegado 124: recibio cc y clave - continuando
+delegado 124: envio valor 98635000 cifrado con llave simetrica al cliente. continuado.
+delegado 124: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.1
+Porcentaje de error: 24.5%
+delegado 126: recibio-HOLA-continuando.
+delegado 126: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 126: envio certificado del servidor. continuando.
+delegado 126: recibio y creo llave simetrica. continuando.
+delegado 126: recibio confirmacion del cliente:OK-continuado.
+delegado 126: recibio cc y clave - continuando
+delegado 126: envio valor 39602100 cifrado con llave simetrica al cliente. continuado.
+delegado 126: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 24.5%
+delegado 127: recibio-HOLA-continuando.
+delegado 127: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 127: envio certificado del servidor. continuando.
+delegado 127: recibio y creo llave simetrica. continuando.
+delegado 127: recibio confirmacion del cliente:OK-continuado.
+delegado 127: recibio cc y clave - continuando
+delegado 127: envio valor 59193100 cifrado con llave simetrica al cliente. continuado.
+delegado 127: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 24.5%
+delegado 128: recibio-HOLA-continuando.
+delegado 128: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 128: envio certificado del servidor. continuando.
+delegado 128: recibio y creo llave simetrica. continuando.
+delegado 128: recibio confirmacion del cliente:OK-continuado.
+delegado 128: recibio cc y clave - continuando
+delegado 128: envio valor 27938600 cifrado con llave simetrica al cliente. continuado.
+delegado 128: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.0%
+delegado 130: recibio-HOLA-continuando.
+delegado 130: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 130: envio certificado del servidor. continuando.
+delegado 130: recibio y creo llave simetrica. continuando.
+delegado 130: recibio confirmacion del cliente:OK-continuado.
+delegado 130: recibio cc y clave - continuando
+delegado 130: envio valor 39660700 cifrado con llave simetrica al cliente. continuado.
+delegado 130: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.0%
+delegado 131: recibio-HOLA-continuando.
+delegado 131: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 131: envio certificado del servidor. continuando.
+delegado 131: recibio y creo llave simetrica. continuando.
+delegado 131: recibio confirmacion del cliente:OK-continuado.
+delegado 131: recibio cc y clave - continuando
+delegado 131: envio valor 63592600 cifrado con llave simetrica al cliente. continuado.
+delegado 131: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 1
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.5%
+delegado 133: recibio-HOLA-continuando.
+delegado 133: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 133: envio certificado del servidor. continuando.
+delegado 133: recibio y creo llave simetrica. continuando.
+delegado 133: recibio confirmacion del cliente:OK-continuado.
+delegado 133: recibio cc y clave - continuando
+delegado 133: envio valor 36069100 cifrado con llave simetrica al cliente. continuado.
+delegado 133: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 1
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.5%
+delegado 134: recibio-HOLA-continuando.
+delegado 134: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 134: envio certificado del servidor. continuando.
+delegado 134: recibio y creo llave simetrica. continuando.
+delegado 134: recibio confirmacion del cliente:OK-continuado.
+delegado 134: recibio cc y clave - continuando
+delegado 134: envio valor 83678000 cifrado con llave simetrica al cliente. continuado.
+delegado 134: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.5%
+delegado 135: recibio-HOLA-continuando.
+delegado 135: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 135: envio certificado del servidor. continuando.
+delegado 135: recibio y creo llave simetrica. continuando.
+delegado 135: recibio confirmacion del cliente:OK-continuado.
+delegado 135: recibio cc y clave - continuando
+delegado 135: envio valor 70869200 cifrado con llave simetrica al cliente. continuado.
+delegado 135: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.5%
+delegado 136: recibio-HOLA-continuando.
+delegado 136: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 136: envio certificado del servidor. continuando.
+delegado 136: recibio y creo llave simetrica. continuando.
+delegado 136: recibio confirmacion del cliente:OK-continuado.
+delegado 136: recibio cc y clave - continuando
+delegado 136: envio valor 70434700 cifrado con llave simetrica al cliente. continuado.
+delegado 136: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 47.8
+Porcentaje de error: 25.5%
+delegado 137: recibio-HOLA-continuando.
+delegado 137: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 137: envio certificado del servidor. continuando.
+delegado 137: recibio y creo llave simetrica. continuando.
+delegado 137: recibio confirmacion del cliente:OK-continuado.
+delegado 137: recibio cc y clave - continuando
+delegado 137: envio valor 26193400 cifrado con llave simetrica al cliente. continuado.
+delegado 137: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 25.5%
+delegado 138: recibio-HOLA-continuando.
+delegado 138: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 138: envio certificado del servidor. continuando.
+delegado 138: recibio y creo llave simetrica. continuando.
+delegado 138: recibio confirmacion del cliente:OK-continuado.
+delegado 138: recibio cc y clave - continuando
+delegado 138: envio valor 76336700 cifrado con llave simetrica al cliente. continuado.
+delegado 138: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 25.5%
+delegado 139: recibio-HOLA-continuando.
+delegado 139: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 139: envio certificado del servidor. continuando.
+delegado 139: recibio y creo llave simetrica. continuando.
+delegado 139: recibio confirmacion del cliente:OK-continuado.
+delegado 139: recibio cc y clave - continuando
+delegado 139: envio valor 93813700 cifrado con llave simetrica al cliente. continuado.
+delegado 139: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.0%
+delegado 141: recibio-HOLA-continuando.
+delegado 141: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 141: envio certificado del servidor. continuando.
+delegado 141: recibio y creo llave simetrica. continuando.
+delegado 141: recibio confirmacion del cliente:OK-continuado.
+delegado 141: recibio cc y clave - continuando
+delegado 141: envio valor 37455000 cifrado con llave simetrica al cliente. continuado.
+delegado 141: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.0%
+delegado 142: recibio-HOLA-continuando.
+delegado 142: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 142: envio certificado del servidor. continuando.
+delegado 142: recibio y creo llave simetrica. continuando.
+delegado 142: recibio confirmacion del cliente:OK-continuado.
+delegado 142: recibio cc y clave - continuando
+delegado 142: envio valor 16390900 cifrado con llave simetrica al cliente. continuado.
+delegado 142: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.5%
+delegado 144: recibio-HOLA-continuando.
+delegado 144: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 144: envio certificado del servidor. continuando.
+delegado 144: recibio y creo llave simetrica. continuando.
+delegado 144: recibio confirmacion del cliente:OK-continuado.
+delegado 144: recibio cc y clave - continuando
+delegado 144: envio valor 98266800 cifrado con llave simetrica al cliente. continuado.
+delegado 144: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.5%
+delegado 145: recibio-HOLA-continuando.
+delegado 145: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 145: envio certificado del servidor. continuando.
+delegado 145: recibio y creo llave simetrica. continuando.
+delegado 145: recibio confirmacion del cliente:OK-continuado.
+delegado 145: recibio cc y clave - continuando
+delegado 145: envio valor 60040400 cifrado con llave simetrica al cliente. continuado.
+delegado 145: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.5%
+delegado 146: recibio-HOLA-continuando.
+delegado 146: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 146: envio certificado del servidor. continuando.
+delegado 146: recibio y creo llave simetrica. continuando.
+delegado 146: recibio confirmacion del cliente:OK-continuado.
+delegado 146: recibio cc y clave - continuando
+delegado 146: envio valor 86124300 cifrado con llave simetrica al cliente. continuado.
+delegado 146: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 44.9
+Porcentaje de error: 26.5%
+delegado 147: recibio-HOLA-continuando.
+delegado 147: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 147: envio certificado del servidor. continuando.
+delegado 147: recibio y creo llave simetrica. continuando.
+delegado 147: recibio confirmacion del cliente:OK-continuado.
+delegado 147: recibio cc y clave - continuando
+delegado 147: envio valor 76133800 cifrado con llave simetrica al cliente. continuado.
+delegado 147: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 26.5%
+delegado 148: recibio-HOLA-continuando.
+delegado 148: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 148: envio certificado del servidor. continuando.
+delegado 148: recibio y creo llave simetrica. continuando.
+delegado 148: recibio confirmacion del cliente:OK-continuado.
+delegado 148: recibio cc y clave - continuando
+delegado 148: envio valor 84920700 cifrado con llave simetrica al cliente. continuado.
+delegado 148: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 26.5%
+delegado 149: recibio-HOLA-continuando.
+delegado 149: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 149: envio certificado del servidor. continuando.
+delegado 149: recibio y creo llave simetrica. continuando.
+delegado 149: recibio confirmacion del cliente:OK-continuado.
+delegado 149: recibio cc y clave - continuando
+delegado 149: envio valor 57382300 cifrado con llave simetrica al cliente. continuado.
+delegado 149: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 26.5%
+delegado 150: recibio-HOLA-continuando.
+delegado 150: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 150: envio certificado del servidor. continuando.
+delegado 150: recibio y creo llave simetrica. continuando.
+delegado 150: recibio confirmacion del cliente:OK-continuado.
+delegado 150: recibio cc y clave - continuando
+delegado 150: envio valor 52139400 cifrado con llave simetrica al cliente. continuado.
+delegado 150: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 26.5%
+delegado 151: recibio-HOLA-continuando.
+delegado 151: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 151: envio certificado del servidor. continuando.
+delegado 151: recibio y creo llave simetrica. continuando.
+delegado 151: recibio confirmacion del cliente:OK-continuado.
+delegado 151: recibio cc y clave - continuando
+delegado 151: envio valor 12657100 cifrado con llave simetrica al cliente. continuado.
+delegado 151: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 26.5%
+delegado 152: recibio-HOLA-continuando.
+delegado 152: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 152: envio certificado del servidor. continuando.
+delegado 152: recibio y creo llave simetrica. continuando.
+delegado 152: recibio confirmacion del cliente:OK-continuado.
+delegado 152: recibio cc y clave - continuando
+delegado 152: envio valor 52682400 cifrado con llave simetrica al cliente. continuado.
+delegado 152: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 27.500000000000004%
+delegado 155: recibio-HOLA-continuando.
+delegado 155: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 155: envio certificado del servidor. continuando.
+delegado 155: recibio y creo llave simetrica. continuando.
+delegado 155: recibio confirmacion del cliente:OK-continuado.
+delegado 155: recibio cc y clave - continuando
+delegado 155: envio valor 22784400 cifrado con llave simetrica al cliente. continuado.
+delegado 155: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 27.500000000000004%
+delegado 156: recibio-HOLA-continuando.
+delegado 156: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 156: envio certificado del servidor. continuando.
+delegado 156: recibio y creo llave simetrica. continuando.
+delegado 156: recibio confirmacion del cliente:OK-continuado.
+delegado 156: recibio cc y clave - continuando
+delegado 156: envio valor 38448800 cifrado con llave simetrica al cliente. continuado.
+delegado 156: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 28.000000000000004%
+delegado 158: recibio-HOLA-continuando.
+delegado 158: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 158: envio certificado del servidor. continuando.
+delegado 158: recibio y creo llave simetrica. continuando.
+delegado 158: recibio confirmacion del cliente:OK-continuado.
+delegado 158: recibio cc y clave - continuando
+delegado 158: envio valor 96571300 cifrado con llave simetrica al cliente. continuado.
+delegado 158: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 46.8
+Porcentaje de error: 28.000000000000004%
+delegado 159: recibio-HOLA-continuando.
+delegado 159: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 159: envio certificado del servidor. continuando.
+delegado 159: recibio y creo llave simetrica. continuando.
+delegado 159: recibio confirmacion del cliente:OK-continuado.
+delegado 159: recibio cc y clave - continuando
+delegado 159: envio valor 13449000 cifrado con llave simetrica al cliente. continuado.
+delegado 159: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.000000000000004%
+delegado 160: recibio-HOLA-continuando.
+delegado 160: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 160: envio certificado del servidor. continuando.
+delegado 160: recibio y creo llave simetrica. continuando.
+delegado 160: recibio confirmacion del cliente:OK-continuado.
+delegado 160: recibio cc y clave - continuando
+delegado 160: envio valor 22030300 cifrado con llave simetrica al cliente. continuado.
+delegado 160: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 162: recibio-HOLA-continuando.
+delegado 162: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 162: envio certificado del servidor. continuando.
+delegado 162: recibio y creo llave simetrica. continuando.
+delegado 162: recibio confirmacion del cliente:OK-continuado.
+delegado 162: recibio cc y clave - continuando
+delegado 162: envio valor 61100700 cifrado con llave simetrica al cliente. continuado.
+delegado 162: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 10
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 163: recibio-HOLA-continuando.
+delegado 163: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 163: envio certificado del servidor. continuando.
+delegado 163: recibio y creo llave simetrica. continuando.
+delegado 163: recibio confirmacion del cliente:OK-continuado.
+delegado 163: recibio cc y clave - continuando
+delegado 163: envio valor 14131500 cifrado con llave simetrica al cliente. continuado.
+delegado 163: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 164: recibio-HOLA-continuando.
+delegado 164: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 164: envio certificado del servidor. continuando.
+delegado 164: recibio y creo llave simetrica. continuando.
+delegado 164: recibio confirmacion del cliente:OK-continuado.
+delegado 164: recibio cc y clave - continuando
+delegado 164: envio valor 16880400 cifrado con llave simetrica al cliente. continuado.
+delegado 164: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 165: recibio-HOLA-continuando.
+delegado 165: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 165: envio certificado del servidor. continuando.
+delegado 165: recibio y creo llave simetrica. continuando.
+delegado 165: recibio confirmacion del cliente:OK-continuado.
+delegado 165: recibio cc y clave - continuando
+delegado 165: envio valor 49039800 cifrado con llave simetrica al cliente. continuado.
+delegado 165: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 166: recibio-HOLA-continuando.
+delegado 166: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 166: envio certificado del servidor. continuando.
+delegado 166: recibio y creo llave simetrica. continuando.
+delegado 166: recibio confirmacion del cliente:OK-continuado.
+delegado 166: recibio cc y clave - continuando
+delegado 166: envio valor 4415 cifrado con llave simetrica al cliente. continuado.
+delegado 166: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 167: recibio-HOLA-continuando.
+delegado 167: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 167: envio certificado del servidor. continuando.
+delegado 167: recibio y creo llave simetrica. continuando.
+delegado 167: recibio confirmacion del cliente:OK-continuado.
+delegado 167: recibio cc y clave - continuando
+delegado 167: envio valor 69835500 cifrado con llave simetrica al cliente. continuado.
+delegado 167: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 168: recibio-HOLA-continuando.
+delegado 168: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 168: envio certificado del servidor. continuando.
+delegado 168: recibio y creo llave simetrica. continuando.
+delegado 168: recibio confirmacion del cliente:OK-continuado.
+delegado 168: recibio cc y clave - continuando
+delegado 168: envio valor 41336500 cifrado con llave simetrica al cliente. continuado.
+delegado 168: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 38.4
+Porcentaje de error: 28.499999999999996%
+delegado 169: recibio-HOLA-continuando.
+delegado 169: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 169: envio certificado del servidor. continuando.
+delegado 169: recibio y creo llave simetrica. continuando.
+delegado 169: recibio confirmacion del cliente:OK-continuado.
+delegado 169: recibio cc y clave - continuando
+delegado 169: envio valor 31373500 cifrado con llave simetrica al cliente. continuado.
+delegado 169: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 170: recibio-HOLA-continuando.
+delegado 170: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 170: envio certificado del servidor. continuando.
+delegado 170: recibio y creo llave simetrica. continuando.
+delegado 170: recibio confirmacion del cliente:OK-continuado.
+delegado 170: recibio cc y clave - continuando
+delegado 170: envio valor 19882300 cifrado con llave simetrica al cliente. continuado.
+delegado 170: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 171: recibio-HOLA-continuando.
+delegado 171: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 171: envio certificado del servidor. continuando.
+delegado 171: recibio y creo llave simetrica. continuando.
+delegado 171: recibio confirmacion del cliente:OK-continuado.
+delegado 171: recibio cc y clave - continuando
+delegado 171: envio valor 86386400 cifrado con llave simetrica al cliente. continuado.
+delegado 171: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 172: recibio-HOLA-continuando.
+delegado 172: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 172: envio certificado del servidor. continuando.
+delegado 172: recibio y creo llave simetrica. continuando.
+delegado 172: recibio confirmacion del cliente:OK-continuado.
+delegado 172: recibio cc y clave - continuando
+delegado 172: envio valor 63846100 cifrado con llave simetrica al cliente. continuado.
+delegado 172: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 173: recibio-HOLA-continuando.
+delegado 173: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 173: envio certificado del servidor. continuando.
+delegado 173: recibio y creo llave simetrica. continuando.
+delegado 173: recibio confirmacion del cliente:OK-continuado.
+delegado 173: recibio cc y clave - continuando
+delegado 173: envio valor 99909200 cifrado con llave simetrica al cliente. continuado.
+delegado 173: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 174: recibio-HOLA-continuando.
+delegado 174: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 174: envio certificado del servidor. continuando.
+delegado 174: recibio y creo llave simetrica. continuando.
+delegado 174: recibio confirmacion del cliente:OK-continuado.
+delegado 174: recibio cc y clave - continuando
+delegado 174: envio valor 46410400 cifrado con llave simetrica al cliente. continuado.
+delegado 174: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 175: recibio-HOLA-continuando.
+delegado 175: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 175: envio certificado del servidor. continuando.
+delegado 175: recibio y creo llave simetrica. continuando.
+delegado 175: recibio confirmacion del cliente:OK-continuado.
+delegado 175: recibio cc y clave - continuando
+delegado 175: envio valor 97583900 cifrado con llave simetrica al cliente. continuado.
+delegado 175: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 176: recibio-HOLA-continuando.
+delegado 176: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 176: envio certificado del servidor. continuando.
+delegado 176: recibio y creo llave simetrica. continuando.
+delegado 176: recibio confirmacion del cliente:OK-continuado.
+delegado 176: recibio cc y clave - continuando
+delegado 176: envio valor 30448900 cifrado con llave simetrica al cliente. continuado.
+delegado 176: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 42.2
+Porcentaje de error: 28.499999999999996%
+delegado 177: recibio-HOLA-continuando.
+delegado 177: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 177: envio certificado del servidor. continuando.
+delegado 177: recibio y creo llave simetrica. continuando.
+delegado 177: recibio confirmacion del cliente:OK-continuado.
+delegado 177: recibio cc y clave - continuando
+delegado 177: envio valor 34653000 cifrado con llave simetrica al cliente. continuado.
+delegado 177: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.499999999999996%
+delegado 178: recibio-HOLA-continuando.
+delegado 178: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 178: envio certificado del servidor. continuando.
+delegado 178: recibio y creo llave simetrica. continuando.
+delegado 178: recibio confirmacion del cliente:OK-continuado.
+delegado 178: recibio cc y clave - continuando
+delegado 178: envio valor 52488000 cifrado con llave simetrica al cliente. continuado.
+delegado 178: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 1
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.499999999999996%
+delegado 179: recibio-HOLA-continuando.
+delegado 179: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 179: envio certificado del servidor. continuando.
+delegado 179: recibio y creo llave simetrica. continuando.
+delegado 179: recibio confirmacion del cliente:OK-continuado.
+delegado 179: recibio cc y clave - continuando
+delegado 179: envio valor 19983600 cifrado con llave simetrica al cliente. continuado.
+delegado 179: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.999999999999996%
+delegado 181: recibio-HOLA-continuando.
+delegado 181: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 181: envio certificado del servidor. continuando.
+delegado 181: recibio y creo llave simetrica. continuando.
+delegado 181: recibio confirmacion del cliente:OK-continuado.
+delegado 181: recibio cc y clave - continuando
+delegado 181: envio valor 51217900 cifrado con llave simetrica al cliente. continuado.
+delegado 181: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.999999999999996%
+delegado 182: recibio-HOLA-continuando.
+delegado 182: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 182: envio certificado del servidor. continuando.
+delegado 182: recibio y creo llave simetrica. continuando.
+delegado 182: recibio confirmacion del cliente:OK-continuado.
+delegado 182: recibio cc y clave - continuando
+delegado 182: envio valor 62887700 cifrado con llave simetrica al cliente. continuado.
+delegado 182: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.999999999999996%
+delegado 183: recibio-HOLA-continuando.
+delegado 183: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 183: envio certificado del servidor. continuando.
+delegado 183: recibio y creo llave simetrica. continuando.
+delegado 183: recibio confirmacion del cliente:OK-continuado.
+delegado 183: recibio cc y clave - continuando
+delegado 183: envio valor 80889300 cifrado con llave simetrica al cliente. continuado.
+delegado 183: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.999999999999996%
+delegado 184: recibio-HOLA-continuando.
+delegado 184: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 184: envio certificado del servidor. continuando.
+delegado 184: recibio y creo llave simetrica. continuando.
+delegado 184: recibio confirmacion del cliente:OK-continuado.
+delegado 184: recibio cc y clave - continuando
+delegado 184: envio valor 33831800 cifrado con llave simetrica al cliente. continuado.
+delegado 184: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 28.999999999999996%
+delegado 185: recibio-HOLA-continuando.
+delegado 185: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 185: envio certificado del servidor. continuando.
+delegado 185: recibio y creo llave simetrica. continuando.
+delegado 185: recibio confirmacion del cliente:OK-continuado.
+delegado 185: recibio cc y clave - continuando
+delegado 185: envio valor 49276500 cifrado con llave simetrica al cliente. continuado.
+delegado 185: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 29.5%
+delegado 187: recibio-HOLA-continuando.
+delegado 187: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 187: envio certificado del servidor. continuando.
+delegado 187: recibio y creo llave simetrica. continuando.
+delegado 187: recibio confirmacion del cliente:OK-continuado.
+delegado 187: recibio cc y clave - continuando
+delegado 187: envio valor 75463600 cifrado con llave simetrica al cliente. continuado.
+delegado 187: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 39.4
+Porcentaje de error: 29.5%
+delegado 188: recibio-HOLA-continuando.
+delegado 188: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 188: envio certificado del servidor. continuando.
+delegado 188: recibio y creo llave simetrica. continuando.
+delegado 188: recibio confirmacion del cliente:OK-continuado.
+delegado 188: recibio cc y clave - continuando
+delegado 188: envio valor 77680800 cifrado con llave simetrica al cliente. continuado.
+delegado 188: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 3
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 189: recibio-HOLA-continuando.
+delegado 189: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 189: envio certificado del servidor. continuando.
+delegado 189: recibio y creo llave simetrica. continuando.
+delegado 189: recibio confirmacion del cliente:OK-continuado.
+delegado 189: recibio cc y clave - continuando
+delegado 189: envio valor 90915800 cifrado con llave simetrica al cliente. continuado.
+delegado 189: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 190: recibio-HOLA-continuando.
+delegado 190: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 190: envio certificado del servidor. continuando.
+delegado 190: recibio y creo llave simetrica. continuando.
+delegado 190: recibio confirmacion del cliente:OK-continuado.
+delegado 190: recibio cc y clave - continuando
+delegado 190: envio valor 32020900 cifrado con llave simetrica al cliente. continuado.
+delegado 190: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 191: recibio-HOLA-continuando.
+delegado 191: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 191: envio certificado del servidor. continuando.
+delegado 191: recibio y creo llave simetrica. continuando.
+delegado 191: recibio confirmacion del cliente:OK-continuado.
+delegado 191: recibio cc y clave - continuando
+delegado 191: envio valor 78225900 cifrado con llave simetrica al cliente. continuado.
+delegado 191: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 192: recibio-HOLA-continuando.
+delegado 192: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 192: envio certificado del servidor. continuando.
+delegado 192: recibio y creo llave simetrica. continuando.
+delegado 192: recibio confirmacion del cliente:OK-continuado.
+delegado 192: recibio cc y clave - continuando
+delegado 192: envio valor 87943800 cifrado con llave simetrica al cliente. continuado.
+delegado 192: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 193: recibio-HOLA-continuando.
+delegado 193: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 193: envio certificado del servidor. continuando.
+delegado 193: recibio y creo llave simetrica. continuando.
+delegado 193: recibio confirmacion del cliente:OK-continuado.
+delegado 193: recibio cc y clave - continuando
+delegado 193: envio valor 50063600 cifrado con llave simetrica al cliente. continuado.
+delegado 193: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 194: recibio-HOLA-continuando.
+delegado 194: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 194: envio certificado del servidor. continuando.
+delegado 194: recibio y creo llave simetrica. continuando.
+delegado 194: recibio confirmacion del cliente:OK-continuado.
+delegado 194: recibio cc y clave - continuando
+delegado 194: envio valor 87004100 cifrado con llave simetrica al cliente. continuado.
+delegado 194: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 195: recibio-HOLA-continuando.
+delegado 195: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 195: envio certificado del servidor. continuando.
+delegado 195: recibio y creo llave simetrica. continuando.
+delegado 195: recibio confirmacion del cliente:OK-continuado.
+delegado 195: recibio cc y clave - continuando
+delegado 195: envio valor 21209400 cifrado con llave simetrica al cliente. continuado.
+delegado 195: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 196: recibio-HOLA-continuando.
+delegado 196: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 196: envio certificado del servidor. continuando.
+delegado 196: recibio y creo llave simetrica. continuando.
+delegado 196: recibio confirmacion del cliente:OK-continuado.
+delegado 196: recibio cc y clave - continuando
+delegado 196: envio valor 35304200 cifrado con llave simetrica al cliente. continuado.
+delegado 196: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 41.6
+Porcentaje de error: 29.5%
+delegado 197: recibio-HOLA-continuando.
+delegado 197: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 197: envio certificado del servidor. continuando.
+delegado 197: recibio y creo llave simetrica. continuando.
+delegado 197: recibio confirmacion del cliente:OK-continuado.
+delegado 197: recibio cc y clave - continuando
+delegado 197: envio valor 59707000 cifrado con llave simetrica al cliente. continuado.
+delegado 197: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 36.7
+Porcentaje de error: 29.5%
+delegado 198: recibio-HOLA-continuando.
+delegado 198: recibio-ALGORITMOS:AES:RSA:HMACSHA256-continuando.
+delegado 198: envio certificado del servidor. continuando.
+delegado 198: recibio y creo llave simetrica. continuando.
+delegado 198: recibio confirmacion del cliente:OK-continuado.
+delegado 198: recibio cc y clave - continuando
+delegado 198: envio valor 59526200 cifrado con llave simetrica al cliente. continuado.
+delegado 198: Terminando exitosamente.OK
+Tiempo de respuesta de una transacción en milis: 2
+Porcentage del CPU usado: 36.7
+Porcentaje de error: 30.0%
