@@ -41,13 +41,15 @@ public class D2 implements Runnable{
 	private String dlg;
 	private byte[] mybyte;
 	private static File file;
+	private static File file2;
 	private static X509Certificate certSer;
 	private static KeyPair keyPairServidor;
 	
-	public static void init(X509Certificate pCertSer, KeyPair pKeyPairServidor, File pFile) {
+	public static void init(X509Certificate pCertSer, KeyPair pKeyPairServidor, File pFile, File pFile2) {
 		certSer = pCertSer;
 		keyPairServidor = pKeyPairServidor;
 		file = pFile;
+		file2 = pFile2;
 	}
 	
 	public D2 (Socket csP, int idP) {
@@ -81,6 +83,18 @@ public class D2 implements Runnable{
 		
 		try {
 			FileWriter fw = new FileWriter(file,true);
+			fw.write(pCadena + "\n");
+			fw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+private void escribirMensaje2(String pCadena) {
+		
+		try {
+			FileWriter fw = new FileWriter(file2,true);
 			fw.write(pCadena + "\n");
 			fw.close();
 		} catch (Exception e) {
@@ -162,7 +176,7 @@ public class D2 implements Runnable{
 				long cm1= System.currentTimeMillis();
 				
 				//SecretKey simetrica = new SecretKeySpec(llaveSimetrica, 0, llaveSimetrica.length, algoritmos[1]);
-				cadenas[3] = dlg + "recibio llave simetrica ["+linea+"] . continuando.";
+				cadenas[3] = dlg + "recibio llave simetrica ["+"] . continuando.";
 				System.out.println(cadenas[3]);
 				
 				/***** Fase 5:  *****/
@@ -235,7 +249,8 @@ public class D2 implements Runnable{
 		        	
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
 				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
-				    escribirMensaje("Porcentaje de error: "+ (transaccionesPerdidas/Generator2.numberOfTasks)*100 + "'%");
+				    escribirMensaje("Porcentaje de error: "+ (transaccionesPerdidas/Generator2.numberOfTasks)*100 + " %");
+				    escribirMensaje2(total+";"+getSystemCpuLoad()+";"+(transaccionesPerdidas/Generator.numberOfTasks));
 				}
 		        
 	        } catch (Exception e) {

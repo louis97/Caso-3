@@ -28,10 +28,10 @@ public class P2 {
 		// TODO Auto-generated method stub
 
 		System.out.println(MAESTRO + "Establezca puerto de conexion:");
-		InputStreamReader isr = new InputStreamReader(System.in);
-		BufferedReader br = new BufferedReader(isr);
-		int ip = Integer.parseInt(br.readLine());
-		System.out.println(MAESTRO + "Empezando servidor maestro en puerto " + ip);
+		//InputStreamReader isr = new InputStreamReader(System.in);
+		//BufferedReader br = new BufferedReader(isr);
+		//int ip = Integer.parseInt(br.readLine());
+		System.out.println(MAESTRO + "Empezando servidor maestro en puerto " + 54321);
 		// Adiciona la libreria como un proveedor de seguridad.
 		Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());		
 
@@ -47,14 +47,25 @@ public class P2 {
 		}
 		FileWriter fw = new FileWriter(file);
 		fw.close();
-
-		D2.init(certSer, keyPairServidor, file);
+		
+		// excel .csv
+		File file2 = null;
+		String ruta2 = "./rx2.csv";
+		file2 = new File(ruta2);
+		if (!file2.exists()) {
+			file2.createNewFile();
+		}
+		FileWriter fw2 = new FileWriter(file2);
+		fw2.close();
+		
+		
+		D2.init(certSer, keyPairServidor, file, file2);
 
 		// Crea el socket que escucha en el puerto seleccionado.
-		ss = new ServerSocket(ip);
+		ss = new ServerSocket(54321);
 		System.out.println(MAESTRO + "Socket creado.");
 
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
 
 		for (int i=0; true ;i++) {
 			try { 
