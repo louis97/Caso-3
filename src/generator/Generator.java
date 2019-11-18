@@ -5,8 +5,8 @@ import uniandes.gload.core.Task;
 import uniandes.gload.examples.clientserver.generator.ClientServerTask;
 
 public class Generator {
-	public static int numberOfTasks = 80;
-	public static int gapBetweenTasks= 100;
+	public static int numberOfTasks = 100;
+	public static int gapBetweenTasks= 40;
 	private LoadGenerator generator;
 
 	public Generator(){

@@ -246,11 +246,11 @@ private void escribirMensaje2(String pCadena) {
 					    escribirMensaje(cadenas[i]); 
 					   
 				    }
-		        	
+		        	Double y = getSystemCpuLoad();
 				    escribirMensaje("Tiempo de respuesta de una transacción en milis: "+total);
-				    escribirMensaje("Porcentage del CPU usado: "+getSystemCpuLoad());
+				    escribirMensaje("Porcentage del CPU usado: "+y);
 				    escribirMensaje("Porcentaje de error: "+ (transaccionesPerdidas/Generator2.numberOfTasks)*100 + " %");
-				    escribirMensaje2(total+";"+getSystemCpuLoad()+";"+(transaccionesPerdidas/Generator.numberOfTasks));
+				    escribirMensaje2(total+";"+ y +";"+(transaccionesPerdidas/Generator.numberOfTasks)*100 +" %");
 				}
 		        
 	        } catch (Exception e) {
